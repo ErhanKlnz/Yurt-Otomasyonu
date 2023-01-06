@@ -49,6 +49,12 @@
             this.cmbDogtarih = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtKangrup = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtVeliAdSoyad = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // CmbOgrAd
@@ -156,10 +162,48 @@
             resources.ApplyResources(this.txtKangrup, "txtKangrup");
             this.txtKangrup.Name = "txtKangrup";
             // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // txtVeliAdSoyad
+            // 
+            resources.ApplyResources(this.txtVeliAdSoyad, "txtVeliAdSoyad");
+            this.txtVeliAdSoyad.Name = "txtVeliAdSoyad";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // maskedTextBox1
+            // 
+            resources.ApplyResources(this.maskedTextBox1, "maskedTextBox1");
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // richTextBox1
+            // 
+            resources.ApplyResources(this.richTextBox1, "richTextBox1");
+            this.richTextBox1.Name = "richTextBox1";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtVeliAdSoyad);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.txtKangrup);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cmbDogtarih);
@@ -209,6 +253,12 @@
         private System.Windows.Forms.MaskedTextBox cmbDogtarih;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtKangrup;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtVeliAdSoyad;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

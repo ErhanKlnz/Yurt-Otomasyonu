@@ -117,40 +117,176 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CmbOgrAd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 17</value>
+  </data>
+  <data name="CmbOgrSoyad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 45</value>
+  </data>
+  <data name="CmbOgrMail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 127</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="CmbOgrMail.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 20</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 78</value>
+  </data>
+  <data name="CmbOgrTC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 72</value>
+  </data>
   <data name="CmbOgrTC.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 136</value>
+  </data>
+  <data name="CmbOgrTel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 152</value>
   </data>
   <data name="CmbOgrTel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 192</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 163</value>
+  </data>
+  <data name="CmbBolum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 241</value>
+  </data>
   <data name="CmbBolum.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 250</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 423</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 221</value>
+  </data>
+  <data name="CmbOdaNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 210</value>
+  </data>
   <data name="CmbOdaNo.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 51</value>
+  </data>
+  <data name="cmbDogtarih.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 102</value>
   </data>
   <data name="cmbDogtarih.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 108</value>
+  </data>
   <data name="txtKangrup.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9pt, style=Bold</value>
   </data>
   <data name="txtKangrup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 242</value>
+    <value>153, 183</value>
   </data>
   <data name="txtKangrup.Size" type="System.Drawing.Size, System.Drawing">
     <value>317, 25</value>
   </data>
   <data name="txtKangrup.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 276</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 17</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Veli Ad Soyad:</value>
+  </data>
+  <data name="txtVeliAdSoyad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9pt, style=Bold</value>
+  </data>
+  <data name="txtVeliAdSoyad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 270</value>
+  </data>
+  <data name="txtVeliAdSoyad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 25</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9pt, style=Bold</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 304</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Veli Tel No :</value>
+  </data>
+  <data name="maskedTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9pt, style=Bold</value>
+  </data>
+  <data name="maskedTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 298</value>
+  </data>
+  <data name="maskedTextBox1.Mask" xml:space="preserve">
+    <value>(999) 000-0000</value>
+  </data>
+  <data name="maskedTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 25</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9pt, style=Bold</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 331</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 17</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Öğrenci Adres  :</value>
+  </data>
+  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 77</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>503, 498</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3007,10 +3143,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAAf84AAHHO
         AAAAAAAAgCEAAOTnAADGAAAAzhEAAMABAADghQAAgAEAAIABAADxjwAA//8AAP//AAA=
 </value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Öğrenci Kayıt</value>
