@@ -12,3 +12,4 @@ C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.pdb
 C:\Users\erhan\source\repos\denemee\denemee\bin\Debug\aa\denemee.resources.dll
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.Form1.aa.resources
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\aa\denemee.resources.dll
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmAnaForm.resources
