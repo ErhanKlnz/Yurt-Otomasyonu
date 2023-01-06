@@ -43,7 +43,7 @@ namespace denemee
                 CmbOdaNo.Items.Add(oku2[0].ToString());
             }
             baglanti.Close();
-            //
+           
         }
          
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -81,7 +81,7 @@ namespace denemee
             komutkaydet.Parameters.AddWithValue("@p4", cmbDogtarih.Text);
             komutkaydet.Parameters.AddWithValue("@p5", CmbOgrMail.Text);
             komutkaydet.Parameters.AddWithValue("@p6", CmbOgrTel.Text);
-            komutkaydet.Parameters.AddWithValue("@p7", CmbOgrKangrup.Text);
+            komutkaydet.Parameters.AddWithValue("@p7", txtKangrup.Text);
             komutkaydet.Parameters.AddWithValue("@p8", CmbOdaNo.Text);
             komutkaydet.Parameters.AddWithValue("@p9", CmbBolum.Text);
             komutkaydet.ExecuteNonQuery();
