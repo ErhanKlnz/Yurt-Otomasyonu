@@ -1,0 +1,11 @@
+C:\Users\erhan\source\repos\denemee\denemee\bin\Debug\denemee.exe.config
+C:\Users\erhan\source\repos\denemee\denemee\bin\Debug\denemee.exe
+C:\Users\erhan\source\repos\denemee\denemee\bin\Debug\denemee.pdb
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.csproj.AssemblyReference.cache
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.csproj.SuggestedBindingRedirects.cache
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.Form1.resources
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.Properties.Resources.resources
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.csproj.GenerateResource.cache
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.csproj.CoreCompileInputs.cache
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.exe
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.pdb
