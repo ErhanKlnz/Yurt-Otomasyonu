@@ -54,11 +54,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglantim.cs" />
     <Compile Include="YurtSistemiDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtSistemiDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Denemee.aa.resx">
+      <DependentUpon>Denemee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Denemee.resx">
       <DependentUpon>Denemee.cs</DependentUpon>
     </EmbeddedResource>

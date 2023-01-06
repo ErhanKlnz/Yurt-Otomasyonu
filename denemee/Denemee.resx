@@ -137,9 +137,6 @@
   <data name="&gt;&gt;cmbDogtarih.Type" xml:space="preserve">
     <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
   <data name="CmbOgrKangrup.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 240</value>
   </data>
@@ -155,8 +152,8 @@
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;CmbOgrSoyad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CmbOgrMail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9pt, style=Bold</value>
   </data>
   <data name="CmbOgrTC.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 131</value>
@@ -194,9 +191,6 @@
   <data name="cmbDogtarih.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 161</value>
   </data>
-  <data name="&gt;&gt;CmbOdaNo.Name" xml:space="preserve">
-    <value>CmbOdaNo</value>
-  </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
@@ -223,9 +217,6 @@
   </data>
   <data name="&gt;&gt;CmbOgrTC.ZOrder" xml:space="preserve">
     <value>13</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>KanGrubu:</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -341,8 +332,8 @@
   <data name="&gt;&gt;CmbOgrKangrup.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 17</value>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9pt, style=Bold</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -355,6 +346,9 @@
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="CmbOgrMail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 186</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9pt, style=Bold</value>
@@ -443,17 +437,17 @@
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="CmbOgrAd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>317, 25</value>
-  </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -466,6 +460,15 @@
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9pt, style=Bold</value>
+  </data>
+  <data name="cmbDogtarih.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 17</value>
@@ -536,6 +539,9 @@
   <data name="&gt;&gt;CmbOgrMail.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="&gt;&gt;cmbDogtarih.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
@@ -545,17 +551,11 @@
   <data name="&gt;&gt;CmbOgrMail.Name" xml:space="preserve">
     <value>CmbOgrMail</value>
   </data>
-  <data name="&gt;&gt;txtKangrup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
   </data>
-  <data name="&gt;&gt;cmbDogtarih.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CmbOgrMail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 9pt, style=Bold</value>
+  <data name="&gt;&gt;CmbOdaNo.Name" xml:space="preserve">
+    <value>CmbOdaNo</value>
   </data>
   <data name="CmbOgrTel.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 211</value>
@@ -575,8 +575,8 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Öğrenci Soyadı:</value>
   </data>
-  <data name="&gt;&gt;cmbDogtarih.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
@@ -593,11 +593,11 @@
   <data name="button1.Text" xml:space="preserve">
     <value>Kaydet</value>
   </data>
-  <data name="cmbDogtarih.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="&gt;&gt;cmbDogtarih.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 9pt, style=Bold</value>
+  <data name="&gt;&gt;CmbOgrSoyad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>$this</value>
@@ -644,8 +644,8 @@
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>264, 360</value>
   </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Times New Roman, 9pt, style=Bold</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>KanGrubu:</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -653,8 +653,8 @@
   <data name="CmbOgrTel.Mask" xml:space="preserve">
     <value>(999) 000-0000</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="CmbOgrAd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 25</value>
   </data>
   <data name="&gt;&gt;CmbOdaNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -680,11 +680,11 @@
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
+  <data name="&gt;&gt;txtKangrup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="CmbOgrMail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 186</value>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 17</value>
   </data>
   <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

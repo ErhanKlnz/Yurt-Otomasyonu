@@ -117,6 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CmbOgrMail.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="CmbOgrTC.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="CmbOgrTel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="CmbBolum.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="CmbOdaNo.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="cmbDogtarih.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtKangrup.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 9pt, style=Bold</value>
@@ -126,5 +148,8 @@
   </data>
   <data name="txtKangrup.Size" type="System.Drawing.Size, System.Drawing">
     <value>317, 25</value>
+  </data>
+  <data name="txtKangrup.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
 </root>

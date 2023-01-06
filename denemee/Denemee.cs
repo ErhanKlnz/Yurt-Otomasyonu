@@ -18,31 +18,31 @@ namespace denemee
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Data Source = ERHAN; Initial Catalog = YurtSistemi; Integrated Security = True");
+        SqlBaglantim bgl = new SqlBaglantim();
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
             //Bölümleri Listeleme
-            baglanti.Open();
-            SqlCommand komut = new SqlCommand("Select Bolum_Id From Bolum", baglanti);
+           
+            SqlCommand komut = new SqlCommand("Select Bolum_Id From Bolum", bgl.baglanti());
             SqlDataReader oku = komut.ExecuteReader();
             while (oku.Read())
             {
                 CmbBolum.Items.Add(oku[0].ToString());
 
             }
-            baglanti.Close();
+            bgl.baglanti().Close();
 
             // Boş oda
-            baglanti.Open();
-            SqlCommand komut2 = new SqlCommand("Select OdaNo from Odalar where OdaMaxOgr != OgrSayi", baglanti);
+           
+            SqlCommand komut2 = new SqlCommand("Select OdaNo from Odalar where OdaMaxOgr != OgrSayi", bgl.baglanti());
             SqlDataReader oku2 = komut2.ExecuteReader();
             while (oku2.Read())
             {
                 CmbOdaNo.Items.Add(oku2[0].ToString());
             }
-            baglanti.Close();
+            bgl.baglanti().Close();
            
         }
          
@@ -73,20 +73,28 @@ namespace denemee
 
         private void button1_Click(object sender, EventArgs e)
         {
-            baglanti.Open();
-            SqlCommand komutkaydet = new SqlCommand("insert into Ogrenci(Ad,Soyad,Ogr_TC,DogTarih,Mail,TelNo,KanGrup,OdaNo,Bolum_Id) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", baglanti);
-            komutkaydet.Parameters.AddWithValue("@p1", CmbOgrAd.Text);
-            komutkaydet.Parameters.AddWithValue("@p2", CmbOgrSoyad.Text);
-            komutkaydet.Parameters.AddWithValue("@p3", CmbOgrTC.Text);
-            komutkaydet.Parameters.AddWithValue("@p4", cmbDogtarih.Text);
-            komutkaydet.Parameters.AddWithValue("@p5", CmbOgrMail.Text);
-            komutkaydet.Parameters.AddWithValue("@p6", CmbOgrTel.Text);
-            komutkaydet.Parameters.AddWithValue("@p7", txtKangrup.Text);
-            komutkaydet.Parameters.AddWithValue("@p8", CmbOdaNo.Text);
-            komutkaydet.Parameters.AddWithValue("@p9", CmbBolum.Text);
-            komutkaydet.ExecuteNonQuery();
-            MessageBox.Show("Öğrenci Eklendi!");
-            baglanti.Close();
+            try
+            {
+                
+                SqlCommand komutkaydet = new SqlCommand("insert into Ogrenci(Ad,Soyad,Ogr_TC,DogTarih,Mail,TelNo,KanGrup,OdaNo,Bolum_Id) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", bgl.baglanti());
+                komutkaydet.Parameters.AddWithValue("@p1", CmbOgrAd.Text);
+                komutkaydet.Parameters.AddWithValue("@p2", CmbOgrSoyad.Text);
+                komutkaydet.Parameters.AddWithValue("@p3", CmbOgrTC.Text);
+                komutkaydet.Parameters.AddWithValue("@p4", cmbDogtarih.Text);
+                komutkaydet.Parameters.AddWithValue("@p5", CmbOgrMail.Text);
+                komutkaydet.Parameters.AddWithValue("@p6", CmbOgrTel.Text);
+                komutkaydet.Parameters.AddWithValue("@p7", txtKangrup.Text);
+                komutkaydet.Parameters.AddWithValue("@p8", CmbOdaNo.Text);
+                komutkaydet.Parameters.AddWithValue("@p9", CmbBolum.Text);
+                komutkaydet.ExecuteNonQuery();
+                MessageBox.Show("Öğrenci Eklendi!");
+                bgl.baglanti().Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("HATA! LÜTFEN YENİDEN DENEYİNİZ.");
+                
+            }
         }
     }
     }
