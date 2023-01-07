@@ -40,6 +40,7 @@
             this.şifreİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,19 +73,19 @@
             // öğrenciKayıdıToolStripMenuItem
             // 
             this.öğrenciKayıdıToolStripMenuItem.Name = "öğrenciKayıdıToolStripMenuItem";
-            this.öğrenciKayıdıToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.öğrenciKayıdıToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
             this.öğrenciKayıdıToolStripMenuItem.Text = "Öğrenci Kayıdı";
             // 
             // öğrenciListesiToolStripMenuItem
             // 
             this.öğrenciListesiToolStripMenuItem.Name = "öğrenciListesiToolStripMenuItem";
-            this.öğrenciListesiToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.öğrenciListesiToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
             this.öğrenciListesiToolStripMenuItem.Text = "Öğrenci Listesi";
             // 
             // öğrenciDüzenleToolStripMenuItem
             // 
             this.öğrenciDüzenleToolStripMenuItem.Name = "öğrenciDüzenleToolStripMenuItem";
-            this.öğrenciDüzenleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.öğrenciDüzenleToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
             this.öğrenciDüzenleToolStripMenuItem.Text = "Öğrenci Düzenle";
             // 
             // ödemelerToolStripMenuItem
@@ -98,7 +99,7 @@
             // ödemeAlToolStripMenuItem
             // 
             this.ödemeAlToolStripMenuItem.Name = "ödemeAlToolStripMenuItem";
-            this.ödemeAlToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ödemeAlToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.ödemeAlToolStripMenuItem.Text = "Ödeme Al";
             // 
             // istatistiklerToolStripMenuItem
@@ -120,26 +121,35 @@
             // şifreİşlemleriToolStripMenuItem
             // 
             this.şifreİşlemleriToolStripMenuItem.Name = "şifreİşlemleriToolStripMenuItem";
-            this.şifreİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.şifreİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
             this.şifreİşlemleriToolStripMenuItem.Text = "Şifre İşlemleri";
             // 
             // personelDüzenleToolStripMenuItem
             // 
             this.personelDüzenleToolStripMenuItem.Name = "personelDüzenleToolStripMenuItem";
-            this.personelDüzenleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.personelDüzenleToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
             this.personelDüzenleToolStripMenuItem.Text = "Personel Düzenle";
             // 
             // personelEkleToolStripMenuItem
             // 
             this.personelEkleToolStripMenuItem.Name = "personelEkleToolStripMenuItem";
-            this.personelEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.personelEkleToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
             this.personelEkleToolStripMenuItem.Text = "Personel Ekle";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(34, 156);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(348, 71);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
             // 
             // FrmAnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 478);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MainMenuStrip = this.menuStrip1;
@@ -167,5 +177,6 @@
         private System.Windows.Forms.ToolStripMenuItem şifreİşlemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelDüzenleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelEkleToolStripMenuItem;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
