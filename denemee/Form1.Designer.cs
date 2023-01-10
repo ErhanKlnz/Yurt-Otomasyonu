@@ -57,6 +57,11 @@
             this.btnDuzenle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.dgwOgrIslem = new System.Windows.Forms.DataGridView();
+            this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrTelNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DogTarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrenciBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.yurtSistemiDataSet9 = new denemee.YurtSistemiDataSet9();
             this.ogrenciBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -66,11 +71,6 @@
             this.ogrenciTableAdapter = new denemee.YurtSistemiDataSet3TableAdapters.OgrenciTableAdapter();
             this.ogrenciTableAdapter1 = new denemee.YurtSistemiDataSet8TableAdapters.OgrenciTableAdapter();
             this.ogrenciTableAdapter2 = new denemee.YurtSistemiDataSet9TableAdapters.OgrenciTableAdapter();
-            this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrTelNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DogTarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgwOgrIslem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet9)).BeginInit();
@@ -383,6 +383,46 @@
             this.dgwOgrIslem.TabIndex = 27;
             this.dgwOgrIslem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwOgrIslem_CellClick_1);
             // 
+            // ogrAdDataGridViewTextBoxColumn
+            // 
+            this.ogrAdDataGridViewTextBoxColumn.DataPropertyName = "OgrAd";
+            this.ogrAdDataGridViewTextBoxColumn.HeaderText = "OgrAd";
+            this.ogrAdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ogrAdDataGridViewTextBoxColumn.Name = "ogrAdDataGridViewTextBoxColumn";
+            this.ogrAdDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ogrSoyadDataGridViewTextBoxColumn
+            // 
+            this.ogrSoyadDataGridViewTextBoxColumn.DataPropertyName = "OgrSoyad";
+            this.ogrSoyadDataGridViewTextBoxColumn.HeaderText = "OgrSoyad";
+            this.ogrSoyadDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ogrSoyadDataGridViewTextBoxColumn.Name = "ogrSoyadDataGridViewTextBoxColumn";
+            this.ogrSoyadDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ogrTCDataGridViewTextBoxColumn
+            // 
+            this.ogrTCDataGridViewTextBoxColumn.DataPropertyName = "OgrTC";
+            this.ogrTCDataGridViewTextBoxColumn.HeaderText = "OgrTC";
+            this.ogrTCDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ogrTCDataGridViewTextBoxColumn.Name = "ogrTCDataGridViewTextBoxColumn";
+            this.ogrTCDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ogrTelNoDataGridViewTextBoxColumn
+            // 
+            this.ogrTelNoDataGridViewTextBoxColumn.DataPropertyName = "OgrTelNo";
+            this.ogrTelNoDataGridViewTextBoxColumn.HeaderText = "OgrTelNo";
+            this.ogrTelNoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ogrTelNoDataGridViewTextBoxColumn.Name = "ogrTelNoDataGridViewTextBoxColumn";
+            this.ogrTelNoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // DogTarih
+            // 
+            this.DogTarih.DataPropertyName = "DogTarih";
+            this.DogTarih.HeaderText = "DogTarih";
+            this.DogTarih.MinimumWidth = 6;
+            this.DogTarih.Name = "DogTarih";
+            this.DogTarih.Width = 125;
+            // 
             // ogrenciBindingSource2
             // 
             this.ogrenciBindingSource2.DataMember = "Ogrenci";
@@ -425,46 +465,6 @@
             // 
             this.ogrenciTableAdapter2.ClearBeforeFill = true;
             // 
-            // ogrAdDataGridViewTextBoxColumn
-            // 
-            this.ogrAdDataGridViewTextBoxColumn.DataPropertyName = "OgrAd";
-            this.ogrAdDataGridViewTextBoxColumn.HeaderText = "OgrAd";
-            this.ogrAdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrAdDataGridViewTextBoxColumn.Name = "ogrAdDataGridViewTextBoxColumn";
-            this.ogrAdDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ogrSoyadDataGridViewTextBoxColumn
-            // 
-            this.ogrSoyadDataGridViewTextBoxColumn.DataPropertyName = "OgrSoyad";
-            this.ogrSoyadDataGridViewTextBoxColumn.HeaderText = "OgrSoyad";
-            this.ogrSoyadDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrSoyadDataGridViewTextBoxColumn.Name = "ogrSoyadDataGridViewTextBoxColumn";
-            this.ogrSoyadDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ogrTCDataGridViewTextBoxColumn
-            // 
-            this.ogrTCDataGridViewTextBoxColumn.DataPropertyName = "OgrTC";
-            this.ogrTCDataGridViewTextBoxColumn.HeaderText = "OgrTC";
-            this.ogrTCDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrTCDataGridViewTextBoxColumn.Name = "ogrTCDataGridViewTextBoxColumn";
-            this.ogrTCDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ogrTelNoDataGridViewTextBoxColumn
-            // 
-            this.ogrTelNoDataGridViewTextBoxColumn.DataPropertyName = "OgrTelNo";
-            this.ogrTelNoDataGridViewTextBoxColumn.HeaderText = "OgrTelNo";
-            this.ogrTelNoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrTelNoDataGridViewTextBoxColumn.Name = "ogrTelNoDataGridViewTextBoxColumn";
-            this.ogrTelNoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // DogTarih
-            // 
-            this.DogTarih.DataPropertyName = "DogTarih";
-            this.DogTarih.HeaderText = "DogTarih";
-            this.DogTarih.MinimumWidth = 6;
-            this.DogTarih.Name = "DogTarih";
-            this.DogTarih.Width = 125;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -500,7 +500,7 @@
             this.Controls.Add(this.lblOgrAd);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Öğrenci Düzenle";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwOgrIslem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource2)).EndInit();

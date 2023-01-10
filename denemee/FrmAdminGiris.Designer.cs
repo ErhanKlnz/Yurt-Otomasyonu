@@ -98,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 303);
+            this.ClientSize = new System.Drawing.Size(513, 325);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtadmsifre);
             this.Controls.Add(this.txtkullanıcıadi);

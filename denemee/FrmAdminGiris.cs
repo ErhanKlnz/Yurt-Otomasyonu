@@ -19,7 +19,7 @@ namespace denemee
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtkullanıcıadi.Text == "admin34" && txtadmsifre.Text == "1234")
+            if (txtkullanıcıadi.Text == "select from Yonetici " && txtadmsifre.Text == "1234")
             {
                 FrmAnaForm fr = new FrmAnaForm();
                 fr.Show();

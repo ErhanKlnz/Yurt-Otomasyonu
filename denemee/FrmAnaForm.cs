@@ -36,5 +36,34 @@ namespace denemee
             lblTimer.Text = DateTime.Now.ToLongTimeString();
 
         }
+
+        private void öğrenciKayıdıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 fr = new Form1();
+            fr.Show();
+        }
+
+        private void şifreİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sifreislemleri sr= new sifreislemleri();
+            sr.Show();
+        }
+
+        private void personelDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPersonel personel= new FrmPersonel();
+            personel.Show();
+        }
+
+        private void bölümEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBolumler bol = new FrmBolumler();
+            bol.Show();
+        }
+
+        private void ödemeAlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
