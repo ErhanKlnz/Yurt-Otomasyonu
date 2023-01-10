@@ -57,21 +57,27 @@
             this.btnDuzenle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.dgwOgrIslem = new System.Windows.Forms.DataGridView();
+            this.ogrenciBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet9 = new denemee.YurtSistemiDataSet9();
+            this.ogrenciBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet8 = new denemee.YurtSistemiDataSet8();
+            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet3 = new denemee.YurtSistemiDataSet3();
+            this.ogrenciTableAdapter = new denemee.YurtSistemiDataSet3TableAdapters.OgrenciTableAdapter();
+            this.ogrenciTableAdapter1 = new denemee.YurtSistemiDataSet8TableAdapters.OgrenciTableAdapter();
+            this.ogrenciTableAdapter2 = new denemee.YurtSistemiDataSet9TableAdapters.OgrenciTableAdapter();
             this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrTelNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiDataSet3 = new denemee.YurtSistemiDataSet3();
-            this.ogrenciTableAdapter = new denemee.YurtSistemiDataSet3TableAdapters.OgrenciTableAdapter();
-            this.yurtSistemiDataSet8 = new denemee.YurtSistemiDataSet8();
-            this.ogrenciBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.ogrenciTableAdapter1 = new denemee.YurtSistemiDataSet8TableAdapters.OgrenciTableAdapter();
+            this.DogTarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgwOgrIslem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblOgrAd
@@ -210,7 +216,7 @@
             // 
             this.txtOgrAd.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtOgrAd.Location = new System.Drawing.Point(147, 525);
-            this.txtOgrAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOgrAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtOgrAd.Name = "txtOgrAd";
             this.txtOgrAd.Size = new System.Drawing.Size(226, 25);
             this.txtOgrAd.TabIndex = 12;
@@ -219,7 +225,7 @@
             // 
             this.txtOgrSoyad.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtOgrSoyad.Location = new System.Drawing.Point(147, 557);
-            this.txtOgrSoyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOgrSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtOgrSoyad.Name = "txtOgrSoyad";
             this.txtOgrSoyad.Size = new System.Drawing.Size(226, 25);
             this.txtOgrSoyad.TabIndex = 13;
@@ -228,7 +234,7 @@
             // 
             this.txtOgrKan.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtOgrKan.Location = new System.Drawing.Point(598, 557);
-            this.txtOgrKan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOgrKan.Margin = new System.Windows.Forms.Padding(4);
             this.txtOgrKan.Name = "txtOgrKan";
             this.txtOgrKan.Size = new System.Drawing.Size(226, 25);
             this.txtOgrKan.TabIndex = 14;
@@ -237,7 +243,7 @@
             // 
             this.txtOgrMail.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtOgrMail.Location = new System.Drawing.Point(147, 647);
-            this.txtOgrMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOgrMail.Margin = new System.Windows.Forms.Padding(4);
             this.txtOgrMail.Name = "txtOgrMail";
             this.txtOgrMail.Size = new System.Drawing.Size(226, 25);
             this.txtOgrMail.TabIndex = 15;
@@ -246,7 +252,7 @@
             // 
             this.txtVeliAdSoyad.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtVeliAdSoyad.Location = new System.Drawing.Point(598, 615);
-            this.txtVeliAdSoyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVeliAdSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtVeliAdSoyad.Name = "txtVeliAdSoyad";
             this.txtVeliAdSoyad.Size = new System.Drawing.Size(226, 25);
             this.txtVeliAdSoyad.TabIndex = 16;
@@ -255,7 +261,7 @@
             // 
             this.mTxtOgrTc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.mTxtOgrTc.Location = new System.Drawing.Point(147, 586);
-            this.mTxtOgrTc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mTxtOgrTc.Margin = new System.Windows.Forms.Padding(4);
             this.mTxtOgrTc.Mask = "00000000000";
             this.mTxtOgrTc.Name = "mTxtOgrTc";
             this.mTxtOgrTc.Size = new System.Drawing.Size(226, 25);
@@ -265,7 +271,7 @@
             // 
             this.mTxtOgrTel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.mTxtOgrTel.Location = new System.Drawing.Point(147, 675);
-            this.mTxtOgrTel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mTxtOgrTel.Margin = new System.Windows.Forms.Padding(4);
             this.mTxtOgrTel.Mask = "(999) 000-0000";
             this.mTxtOgrTel.Name = "mTxtOgrTel";
             this.mTxtOgrTel.Size = new System.Drawing.Size(226, 25);
@@ -275,7 +281,7 @@
             // 
             this.mTxtDogTarih.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.mTxtDogTarih.Location = new System.Drawing.Point(147, 618);
-            this.mTxtDogTarih.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mTxtDogTarih.Margin = new System.Windows.Forms.Padding(4);
             this.mTxtDogTarih.Mask = "00/00/0000";
             this.mTxtDogTarih.Name = "mTxtDogTarih";
             this.mTxtDogTarih.Size = new System.Drawing.Size(226, 25);
@@ -286,7 +292,7 @@
             // 
             this.mTxtVeliTel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.mTxtVeliTel.Location = new System.Drawing.Point(598, 647);
-            this.mTxtVeliTel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mTxtVeliTel.Margin = new System.Windows.Forms.Padding(4);
             this.mTxtVeliTel.Mask = "(999) 000-0000";
             this.mTxtVeliTel.Name = "mTxtVeliTel";
             this.mTxtVeliTel.Size = new System.Drawing.Size(226, 25);
@@ -297,7 +303,7 @@
             this.cbxOgrBolum.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cbxOgrBolum.FormattingEnabled = true;
             this.cbxOgrBolum.Location = new System.Drawing.Point(598, 525);
-            this.cbxOgrBolum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOgrBolum.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOgrBolum.Name = "cbxOgrBolum";
             this.cbxOgrBolum.Size = new System.Drawing.Size(226, 25);
             this.cbxOgrBolum.TabIndex = 21;
@@ -307,7 +313,7 @@
             this.cbxOdaNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cbxOdaNo.FormattingEnabled = true;
             this.cbxOdaNo.Location = new System.Drawing.Point(598, 584);
-            this.cbxOdaNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxOdaNo.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOdaNo.Name = "cbxOdaNo";
             this.cbxOdaNo.Size = new System.Drawing.Size(226, 25);
             this.cbxOdaNo.TabIndex = 22;
@@ -316,7 +322,7 @@
             // 
             this.rTxtAdres.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rTxtAdres.Location = new System.Drawing.Point(928, 530);
-            this.rTxtAdres.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rTxtAdres.Margin = new System.Windows.Forms.Padding(4);
             this.rTxtAdres.Name = "rTxtAdres";
             this.rTxtAdres.Size = new System.Drawing.Size(223, 113);
             this.rTxtAdres.TabIndex = 23;
@@ -326,7 +332,7 @@
             // 
             this.btnOgrEkle.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOgrEkle.Location = new System.Drawing.Point(928, 307);
-            this.btnOgrEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOgrEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnOgrEkle.Name = "btnOgrEkle";
             this.btnOgrEkle.Size = new System.Drawing.Size(152, 25);
             this.btnOgrEkle.TabIndex = 24;
@@ -338,7 +344,7 @@
             // 
             this.btnDuzenle.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDuzenle.Location = new System.Drawing.Point(928, 373);
-            this.btnDuzenle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDuzenle.Margin = new System.Windows.Forms.Padding(4);
             this.btnDuzenle.Name = "btnDuzenle";
             this.btnDuzenle.Size = new System.Drawing.Size(152, 25);
             this.btnDuzenle.TabIndex = 25;
@@ -350,7 +356,7 @@
             // 
             this.btnSil.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSil.Location = new System.Drawing.Point(928, 433);
-            this.btnSil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(152, 25);
             this.btnSil.TabIndex = 26;
@@ -366,15 +372,58 @@
             this.ogrAdDataGridViewTextBoxColumn,
             this.ogrSoyadDataGridViewTextBoxColumn,
             this.ogrTCDataGridViewTextBoxColumn,
-            this.ogrTelNoDataGridViewTextBoxColumn});
-            this.dgwOgrIslem.DataSource = this.ogrenciBindingSource1;
+            this.ogrTelNoDataGridViewTextBoxColumn,
+            this.DogTarih});
+            this.dgwOgrIslem.DataSource = this.ogrenciBindingSource2;
             this.dgwOgrIslem.Location = new System.Drawing.Point(13, 30);
-            this.dgwOgrIslem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgwOgrIslem.Margin = new System.Windows.Forms.Padding(4);
             this.dgwOgrIslem.Name = "dgwOgrIslem";
             this.dgwOgrIslem.RowHeadersWidth = 51;
             this.dgwOgrIslem.Size = new System.Drawing.Size(700, 386);
             this.dgwOgrIslem.TabIndex = 27;
             this.dgwOgrIslem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwOgrIslem_CellClick_1);
+            // 
+            // ogrenciBindingSource2
+            // 
+            this.ogrenciBindingSource2.DataMember = "Ogrenci";
+            this.ogrenciBindingSource2.DataSource = this.yurtSistemiDataSet9;
+            // 
+            // yurtSistemiDataSet9
+            // 
+            this.yurtSistemiDataSet9.DataSetName = "YurtSistemiDataSet9";
+            this.yurtSistemiDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciBindingSource1
+            // 
+            this.ogrenciBindingSource1.DataMember = "Ogrenci";
+            this.ogrenciBindingSource1.DataSource = this.yurtSistemiDataSet8;
+            // 
+            // yurtSistemiDataSet8
+            // 
+            this.yurtSistemiDataSet8.DataSetName = "YurtSistemiDataSet8";
+            this.yurtSistemiDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciBindingSource
+            // 
+            this.ogrenciBindingSource.DataMember = "Ogrenci";
+            this.ogrenciBindingSource.DataSource = this.yurtSistemiDataSet3;
+            // 
+            // yurtSistemiDataSet3
+            // 
+            this.yurtSistemiDataSet3.DataSetName = "YurtSistemiDataSet3";
+            this.yurtSistemiDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciTableAdapter
+            // 
+            this.ogrenciTableAdapter.ClearBeforeFill = true;
+            // 
+            // ogrenciTableAdapter1
+            // 
+            this.ogrenciTableAdapter1.ClearBeforeFill = true;
+            // 
+            // ogrenciTableAdapter2
+            // 
+            this.ogrenciTableAdapter2.ClearBeforeFill = true;
             // 
             // ogrAdDataGridViewTextBoxColumn
             // 
@@ -408,39 +457,19 @@
             this.ogrTelNoDataGridViewTextBoxColumn.Name = "ogrTelNoDataGridViewTextBoxColumn";
             this.ogrTelNoDataGridViewTextBoxColumn.Width = 125;
             // 
-            // ogrenciBindingSource
+            // DogTarih
             // 
-            this.ogrenciBindingSource.DataMember = "Ogrenci";
-            this.ogrenciBindingSource.DataSource = this.yurtSistemiDataSet3;
-            // 
-            // yurtSistemiDataSet3
-            // 
-            this.yurtSistemiDataSet3.DataSetName = "YurtSistemiDataSet3";
-            this.yurtSistemiDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrenciTableAdapter
-            // 
-            this.ogrenciTableAdapter.ClearBeforeFill = true;
-            // 
-            // yurtSistemiDataSet8
-            // 
-            this.yurtSistemiDataSet8.DataSetName = "YurtSistemiDataSet8";
-            this.yurtSistemiDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrenciBindingSource1
-            // 
-            this.ogrenciBindingSource1.DataMember = "Ogrenci";
-            this.ogrenciBindingSource1.DataSource = this.yurtSistemiDataSet8;
-            // 
-            // ogrenciTableAdapter1
-            // 
-            this.ogrenciTableAdapter1.ClearBeforeFill = true;
+            this.DogTarih.DataPropertyName = "DogTarih";
+            this.DogTarih.HeaderText = "DogTarih";
+            this.DogTarih.MinimumWidth = 6;
+            this.DogTarih.Name = "DogTarih";
+            this.DogTarih.Width = 125;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1197, 718);
+            this.ClientSize = new System.Drawing.Size(1200, 710);
             this.Controls.Add(this.dgwOgrIslem);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnDuzenle);
@@ -469,15 +498,17 @@
             this.Controls.Add(this.lblOgrTc);
             this.Controls.Add(this.lblOgrSoyad);
             this.Controls.Add(this.lblOgrAd);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwOgrIslem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -517,12 +548,8 @@
         private System.Windows.Forms.BindingSource ogrenciBindingSource;
         private YurtSistemiDataSet3TableAdapters.OgrenciTableAdapter ogrenciTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn ogrIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrAdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrSoyadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrTCDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dogTarihDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ogrMailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrTelNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bolumIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kanGrupDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn odaNoDataGridViewTextBoxColumn;
@@ -532,5 +559,13 @@
         private YurtSistemiDataSet8 yurtSistemiDataSet8;
         private System.Windows.Forms.BindingSource ogrenciBindingSource1;
         private YurtSistemiDataSet8TableAdapters.OgrenciTableAdapter ogrenciTableAdapter1;
+        private YurtSistemiDataSet9 yurtSistemiDataSet9;
+        private System.Windows.Forms.BindingSource ogrenciBindingSource2;
+        private YurtSistemiDataSet9TableAdapters.OgrenciTableAdapter ogrenciTableAdapter2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ogrAdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ogrSoyadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ogrTCDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ogrTelNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DogTarih;
     }
 }

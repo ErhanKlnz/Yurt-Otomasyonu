@@ -23,10 +23,9 @@ namespace denemee
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'yurtSistemiDataSet8.Ogrenci' table. You can move, or remove it, as needed.
-            this.ogrenciTableAdapter1.Fill(this.yurtSistemiDataSet8.Ogrenci);
-
-            this.ogrenciTableAdapter.Fill(this.yurtSistemiDataSet3.Ogrenci);
+            // TODO: This line of code loads data into the 'yurtSistemiDataSet9.Ogrenci' table. You can move, or remove it, as needed.
+            this.ogrenciTableAdapter2.Fill(this.yurtSistemiDataSet9.Ogrenci);
+            
 
 
             SqlCommand komut = new SqlCommand("Select Bolum_Id From Bolum", bgl.baglanti());
@@ -76,7 +75,7 @@ namespace denemee
 
 
 
-                this.ogrenciTableAdapter.Fill(this.yurtSistemiDataSet3.Ogrenci);
+                this.ogrenciTableAdapter2.Fill(this.yurtSistemiDataSet9.Ogrenci);
                 bgl.baglanti().Close();
             }
             catch (Exception)
@@ -95,7 +94,7 @@ namespace denemee
                 komut5.ExecuteNonQuery();
                 bgl.baglanti().Close();
                 MessageBox.Show("Silme işlemi gerçekleştirildi");
-                this.ogrenciTableAdapter.Fill(this.yurtSistemiDataSet3.Ogrenci);
+                this.ogrenciTableAdapter2.Fill(this.yurtSistemiDataSet9.Ogrenci);
             }
             catch (Exception)
             {
@@ -128,7 +127,7 @@ namespace denemee
 
             bgl.baglanti().Close();
             MessageBox.Show("Düzenleme işlemi gerçekleştirildi");
-            this.ogrenciTableAdapter.Fill(this.yurtSistemiDataSet3.Ogrenci);
+            this.ogrenciTableAdapter2.Fill(this.yurtSistemiDataSet9.Ogrenci);
 
 
         }
@@ -170,6 +169,8 @@ namespace denemee
 
 
         }
+
+        
     }
 }
 
