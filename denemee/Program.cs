@@ -16,7 +16,7 @@ namespace denemee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new sifreislemleri());
+            Application.Run(new Form1());
         }
     }
 }
