@@ -22,9 +22,9 @@ namespace denemee
 
         private void FrmBolumler_Load(object sender, EventArgs e)
         {
-
-            // TODO: This line of code loads data into the 'yurtSistemiDataSet1.Bolum' table. You can move, or remove it, as needed.
-            this.bolumTableAdapter.Fill(this.yurtSistemiDataSet1.Bolum);
+            // TODO: This line of code loads data into the 'yurtSistemiDataSet10.Bolum' table. You can move, or remove it, as needed.
+            this.bolumTableAdapter1.Fill(this.yurtSistemiDataSet10.Bolum);
+;
 
         }
 
@@ -39,7 +39,7 @@ namespace denemee
                 komut1.ExecuteNonQuery();
                 bgl.baglanti().Close();
                 MessageBox.Show("Bölüm Eklendi!");
-                this.bolumTableAdapter.Fill(this.yurtSistemiDataSet1.Bolum);
+                this.bolumTableAdapter1.Fill(this.yurtSistemiDataSet10.Bolum);
             }
             catch (Exception)
             {
@@ -59,7 +59,7 @@ namespace denemee
                 komut2.ExecuteNonQuery();
                 bgl.baglanti().Close();
                 MessageBox.Show("Silme işlemi gerçekleştirildi");
-                this.bolumTableAdapter.Fill(this.yurtSistemiDataSet1.Bolum);
+                this.bolumTableAdapter1.Fill(this.yurtSistemiDataSet10.Bolum);
             }
             catch (Exception)
             {
@@ -79,7 +79,7 @@ namespace denemee
                 komut3.Parameters.AddWithValue("@p1", txtBolumAd.Text);
                 komut3.ExecuteNonQuery();
                 MessageBox.Show("İşleminiz Gerçekleşmiştir");
-                this.bolumTableAdapter.Fill(this.yurtSistemiDataSet1.Bolum);
+                this.bolumTableAdapter1.Fill(this.yurtSistemiDataSet10.Bolum);
 
             }
             catch (Exception)

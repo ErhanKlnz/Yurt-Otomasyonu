@@ -39,11 +39,14 @@
             this.txtBolumAd = new System.Windows.Forms.TextBox();
             this.lblBolumAd = new System.Windows.Forms.Label();
             this.dgwBolumler = new System.Windows.Forms.DataGridView();
+            this.bolumIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bolumAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bolumBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtSistemiDataSet1 = new denemee.YurtSistemiDataSet1();
             this.bolumTableAdapter = new denemee.YurtSistemiDataSet1TableAdapters.BolumTableAdapter();
-            this.bolumIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bolumAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yurtSistemiDataSet10 = new denemee.YurtSistemiDataSet10();
+            this.bolumBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bolumTableAdapter1 = new denemee.YurtSistemiDataSet10TableAdapters.BolumTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumEkle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumDuzenle)).BeginInit();
@@ -51,14 +54,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgwBolumler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bolumBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-531, 111);
+            this.pictureBox2.Location = new System.Drawing.Point(-708, 137);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox2.Size = new System.Drawing.Size(107, 98);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -66,9 +72,10 @@
             // pcbBolumEkle
             // 
             this.pcbBolumEkle.Image = ((System.Drawing.Image)(resources.GetObject("pcbBolumEkle.Image")));
-            this.pcbBolumEkle.Location = new System.Drawing.Point(44, 346);
+            this.pcbBolumEkle.Location = new System.Drawing.Point(59, 426);
+            this.pcbBolumEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcbBolumEkle.Name = "pcbBolumEkle";
-            this.pcbBolumEkle.Size = new System.Drawing.Size(80, 80);
+            this.pcbBolumEkle.Size = new System.Drawing.Size(107, 98);
             this.pcbBolumEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbBolumEkle.TabIndex = 2;
             this.pcbBolumEkle.TabStop = false;
@@ -77,9 +84,10 @@
             // pcbBolumDuzenle
             // 
             this.pcbBolumDuzenle.Image = ((System.Drawing.Image)(resources.GetObject("pcbBolumDuzenle.Image")));
-            this.pcbBolumDuzenle.Location = new System.Drawing.Point(130, 346);
+            this.pcbBolumDuzenle.Location = new System.Drawing.Point(173, 426);
+            this.pcbBolumDuzenle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcbBolumDuzenle.Name = "pcbBolumDuzenle";
-            this.pcbBolumDuzenle.Size = new System.Drawing.Size(80, 80);
+            this.pcbBolumDuzenle.Size = new System.Drawing.Size(107, 98);
             this.pcbBolumDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbBolumDuzenle.TabIndex = 3;
             this.pcbBolumDuzenle.TabStop = false;
@@ -88,9 +96,10 @@
             // pcbBolumSil
             // 
             this.pcbBolumSil.Image = ((System.Drawing.Image)(resources.GetObject("pcbBolumSil.Image")));
-            this.pcbBolumSil.Location = new System.Drawing.Point(216, 346);
+            this.pcbBolumSil.Location = new System.Drawing.Point(288, 426);
+            this.pcbBolumSil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pcbBolumSil.Name = "pcbBolumSil";
-            this.pcbBolumSil.Size = new System.Drawing.Size(80, 80);
+            this.pcbBolumSil.Size = new System.Drawing.Size(107, 98);
             this.pcbBolumSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbBolumSil.TabIndex = 4;
             this.pcbBolumSil.TabStop = false;
@@ -100,9 +109,10 @@
             // 
             this.lblBolumId.AutoSize = true;
             this.lblBolumId.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBolumId.Location = new System.Drawing.Point(14, 252);
+            this.lblBolumId.Location = new System.Drawing.Point(19, 310);
+            this.lblBolumId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBolumId.Name = "lblBolumId";
-            this.lblBolumId.Size = new System.Drawing.Size(58, 15);
+            this.lblBolumId.Size = new System.Drawing.Size(72, 17);
             this.lblBolumId.TabIndex = 5;
             this.lblBolumId.Text = "Bölüm ID";
             // 
@@ -110,26 +120,29 @@
             // 
             this.txtBolumId.Enabled = false;
             this.txtBolumId.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBolumId.Location = new System.Drawing.Point(78, 249);
+            this.txtBolumId.Location = new System.Drawing.Point(104, 306);
+            this.txtBolumId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBolumId.Name = "txtBolumId";
-            this.txtBolumId.Size = new System.Drawing.Size(218, 21);
+            this.txtBolumId.Size = new System.Drawing.Size(289, 25);
             this.txtBolumId.TabIndex = 6;
             // 
             // txtBolumAd
             // 
             this.txtBolumAd.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBolumAd.Location = new System.Drawing.Point(78, 276);
+            this.txtBolumAd.Location = new System.Drawing.Point(104, 340);
+            this.txtBolumAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBolumAd.Name = "txtBolumAd";
-            this.txtBolumAd.Size = new System.Drawing.Size(218, 21);
+            this.txtBolumAd.Size = new System.Drawing.Size(289, 25);
             this.txtBolumAd.TabIndex = 8;
             // 
             // lblBolumAd
             // 
             this.lblBolumAd.AutoSize = true;
             this.lblBolumAd.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBolumAd.Location = new System.Drawing.Point(14, 278);
+            this.lblBolumAd.Location = new System.Drawing.Point(19, 342);
+            this.lblBolumAd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBolumAd.Name = "lblBolumAd";
-            this.lblBolumAd.Size = new System.Drawing.Size(58, 15);
+            this.lblBolumAd.Size = new System.Drawing.Size(73, 17);
             this.lblBolumAd.TabIndex = 7;
             this.lblBolumAd.Text = "Bölüm Ad";
             // 
@@ -140,12 +153,31 @@
             this.dgwBolumler.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.bolumIdDataGridViewTextBoxColumn,
             this.bolumAdDataGridViewTextBoxColumn});
-            this.dgwBolumler.DataSource = this.bolumBindingSource;
-            this.dgwBolumler.Location = new System.Drawing.Point(343, 15);
+            this.dgwBolumler.DataSource = this.bolumBindingSource1;
+            this.dgwBolumler.Location = new System.Drawing.Point(457, 18);
+            this.dgwBolumler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgwBolumler.Name = "dgwBolumler";
-            this.dgwBolumler.Size = new System.Drawing.Size(306, 411);
+            this.dgwBolumler.RowHeadersWidth = 51;
+            this.dgwBolumler.Size = new System.Drawing.Size(408, 506);
             this.dgwBolumler.TabIndex = 9;
             this.dgwBolumler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwBolumler_CellClick);
+            // 
+            // bolumIdDataGridViewTextBoxColumn
+            // 
+            this.bolumIdDataGridViewTextBoxColumn.DataPropertyName = "Bolum_Id";
+            this.bolumIdDataGridViewTextBoxColumn.HeaderText = "Bölüm ID";
+            this.bolumIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.bolumIdDataGridViewTextBoxColumn.Name = "bolumIdDataGridViewTextBoxColumn";
+            this.bolumIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bolumIdDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // bolumAdDataGridViewTextBoxColumn
+            // 
+            this.bolumAdDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.bolumAdDataGridViewTextBoxColumn.DataPropertyName = "BolumAd";
+            this.bolumAdDataGridViewTextBoxColumn.HeaderText = "Bölümün Adı";
+            this.bolumAdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.bolumAdDataGridViewTextBoxColumn.Name = "bolumAdDataGridViewTextBoxColumn";
             // 
             // bolumBindingSource
             // 
@@ -161,27 +193,26 @@
             // 
             this.bolumTableAdapter.ClearBeforeFill = true;
             // 
-            // bolumIdDataGridViewTextBoxColumn
+            // yurtSistemiDataSet10
             // 
-            this.bolumIdDataGridViewTextBoxColumn.DataPropertyName = "Bolum_Id";
-            this.bolumIdDataGridViewTextBoxColumn.HeaderText = "Bölüm ID";
-            this.bolumIdDataGridViewTextBoxColumn.Name = "bolumIdDataGridViewTextBoxColumn";
-            this.bolumIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.bolumIdDataGridViewTextBoxColumn.Width = 80;
+            this.yurtSistemiDataSet10.DataSetName = "YurtSistemiDataSet10";
+            this.yurtSistemiDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // bolumAdDataGridViewTextBoxColumn
+            // bolumBindingSource1
             // 
-            this.bolumAdDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.bolumAdDataGridViewTextBoxColumn.DataPropertyName = "BolumAd";
-            this.bolumAdDataGridViewTextBoxColumn.HeaderText = "Bölümün Adı";
-            this.bolumAdDataGridViewTextBoxColumn.Name = "bolumAdDataGridViewTextBoxColumn";
+            this.bolumBindingSource1.DataMember = "Bolum";
+            this.bolumBindingSource1.DataSource = this.yurtSistemiDataSet10;
+            // 
+            // bolumTableAdapter1
+            // 
+            this.bolumTableAdapter1.ClearBeforeFill = true;
             // 
             // FrmBolumler
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(661, 450);
+            this.ClientSize = new System.Drawing.Size(881, 554);
             this.Controls.Add(this.dgwBolumler);
             this.Controls.Add(this.txtBolumAd);
             this.Controls.Add(this.lblBolumAd);
@@ -191,6 +222,7 @@
             this.Controls.Add(this.pcbBolumDuzenle);
             this.Controls.Add(this.pcbBolumEkle);
             this.Controls.Add(this.pictureBox2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmBolumler";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.FrmBolumler_Load);
@@ -201,6 +233,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgwBolumler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bolumBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,5 +256,8 @@
         private YurtSistemiDataSet1TableAdapters.BolumTableAdapter bolumTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn bolumIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bolumAdDataGridViewTextBoxColumn;
+        private YurtSistemiDataSet10 yurtSistemiDataSet10;
+        private System.Windows.Forms.BindingSource bolumBindingSource1;
+        private YurtSistemiDataSet10TableAdapters.BolumTableAdapter bolumTableAdapter1;
     }
 }

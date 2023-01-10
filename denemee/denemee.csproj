@@ -100,6 +100,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtSistemiDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="YurtSistemiDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtSistemiDataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="YurtSistemiDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -208,6 +213,17 @@
     </None>
     <None Include="YurtSistemiDataSet1.xss">
       <DependentUpon>YurtSistemiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="YurtSistemiDataSet10.xsc">
+      <DependentUpon>YurtSistemiDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="YurtSistemiDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtSistemiDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtSistemiDataSet10.xss">
+      <DependentUpon>YurtSistemiDataSet10.xsd</DependentUpon>
     </None>
     <None Include="YurtSistemiDataSet2.xsc">
       <DependentUpon>YurtSistemiDataSet2.xsd</DependentUpon>
