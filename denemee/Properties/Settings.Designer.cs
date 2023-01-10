@@ -32,5 +32,26 @@ namespace denemee.Properties {
                 return ((string)(this["YurtSistemiConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SELCUK-LAPTOP\\MSSQLSERVER01;Initial Catalog=YurtSistemi;Integrated Se" +
+            "curity=True")]
+        public string YurtSistemiConnectionString1 {
+            get {
+                return ((string)(this["YurtSistemiConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SELCUK-LAPTOP\\MSSQLSERVER01;Integrated Security=True")]
+        public string ConnectionString {
+            get {
+                return ((string)(this["ConnectionString"]));
+            }
+        }
     }
 }

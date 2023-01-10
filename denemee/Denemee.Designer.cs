@@ -61,7 +61,7 @@
             // 
             resources.ApplyResources(this.CmbOgrAd, "CmbOgrAd");
             this.CmbOgrAd.Name = "CmbOgrAd";
-            this.CmbOgrAd.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // CmbOgrSoyad
             // 
@@ -93,7 +93,7 @@
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            
             // 
             // CmbOgrTel
             // 
@@ -115,7 +115,7 @@
             resources.ApplyResources(this.CmbBolum, "CmbBolum");
             this.CmbBolum.FormattingEnabled = true;
             this.CmbBolum.Name = "CmbBolum";
-            this.CmbBolum.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            
             // 
             // label7
             // 
@@ -144,7 +144,7 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            
             // 
             // cmbDogtarih
             // 
