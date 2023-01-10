@@ -32,18 +32,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtOgrTcOdeme = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtOdenen = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtKalanBorc = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgwOgrOdeme = new System.Windows.Forms.DataGridView();
             this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtSistemiDataSet4 = new denemee.YurtSistemiDataSet4();
             this.ogrenciTableAdapter = new denemee.YurtSistemiDataSet4TableAdapters.OgrenciTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtOgrAdOdeme = new System.Windows.Forms.TextBox();
+            this.lblOgrAdOdeme = new System.Windows.Forms.Label();
+            this.btnOdemeAl = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwOgrOdeme)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet4)).BeginInit();
             this.SuspendLayout();
@@ -51,17 +51,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 38);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(22, 63);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(70, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Öğrenci TC";
             // 
             // txtOgrTcOdeme
             // 
-            this.txtOgrTcOdeme.Location = new System.Drawing.Point(100, 38);
+            this.txtOgrTcOdeme.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtOgrTcOdeme.Location = new System.Drawing.Point(100, 63);
+            this.txtOgrTcOdeme.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtOgrTcOdeme.Name = "txtOgrTcOdeme";
-            this.txtOgrTcOdeme.Size = new System.Drawing.Size(138, 20);
+            this.txtOgrTcOdeme.Size = new System.Drawing.Size(160, 21);
             this.txtOgrTcOdeme.TabIndex = 1;
             // 
             // contextMenuStrip1
@@ -69,69 +73,55 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // textBox2
+            // txtOdenen
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtOdenen.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtOdenen.Location = new System.Drawing.Point(362, 33);
+            this.txtOdenen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtOdenen.Name = "txtOdenen";
+            this.txtOdenen.Size = new System.Drawing.Size(160, 21);
+            this.txtOdenen.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 67);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(284, 37);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(49, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Ödenen";
             // 
-            // textBox3
+            // txtKalanBorc
             // 
-            this.textBox3.Location = new System.Drawing.Point(100, 90);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(138, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtKalanBorc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKalanBorc.Location = new System.Drawing.Point(362, 63);
+            this.txtKalanBorc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtKalanBorc.Name = "txtKalanBorc";
+            this.txtKalanBorc.Size = new System.Drawing.Size(160, 21);
+            this.txtKalanBorc.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 97);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(284, 72);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(66, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Kalan Borç";
             // 
-            // dataGridView1
+            // dgwOgrOdeme
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ogrAdDataGridViewTextBoxColumn,
-            this.ogrSoyadDataGridViewTextBoxColumn,
-            this.ogrTCDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.ogrenciBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 221);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(471, 184);
-            this.dataGridView1.TabIndex = 7;
-            // 
-            // ogrAdDataGridViewTextBoxColumn
-            // 
-            this.ogrAdDataGridViewTextBoxColumn.DataPropertyName = "OgrAd";
-            this.ogrAdDataGridViewTextBoxColumn.HeaderText = "OgrAd";
-            this.ogrAdDataGridViewTextBoxColumn.Name = "ogrAdDataGridViewTextBoxColumn";
-            // 
-            // ogrSoyadDataGridViewTextBoxColumn
-            // 
-            this.ogrSoyadDataGridViewTextBoxColumn.DataPropertyName = "OgrSoyad";
-            this.ogrSoyadDataGridViewTextBoxColumn.HeaderText = "OgrSoyad";
-            this.ogrSoyadDataGridViewTextBoxColumn.Name = "ogrSoyadDataGridViewTextBoxColumn";
-            // 
-            // ogrTCDataGridViewTextBoxColumn
-            // 
-            this.ogrTCDataGridViewTextBoxColumn.DataPropertyName = "OgrTC";
-            this.ogrTCDataGridViewTextBoxColumn.HeaderText = "OgrTC";
-            this.ogrTCDataGridViewTextBoxColumn.Name = "ogrTCDataGridViewTextBoxColumn";
+            this.dgwOgrOdeme.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwOgrOdeme.Location = new System.Drawing.Point(14, 180);
+            this.dgwOgrOdeme.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dgwOgrOdeme.Name = "dgwOgrOdeme";
+            this.dgwOgrOdeme.Size = new System.Drawing.Size(550, 212);
+            this.dgwOgrOdeme.TabIndex = 7;
+            this.dgwOgrOdeme.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwOgrOdeme_CellClick);
             // 
             // ogrenciBindingSource
             // 
@@ -147,22 +137,59 @@
             // 
             this.ogrenciTableAdapter.ClearBeforeFill = true;
             // 
+            // txtOgrAdOdeme
+            // 
+            this.txtOgrAdOdeme.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtOgrAdOdeme.Location = new System.Drawing.Point(100, 33);
+            this.txtOgrAdOdeme.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtOgrAdOdeme.Name = "txtOgrAdOdeme";
+            this.txtOgrAdOdeme.Size = new System.Drawing.Size(160, 21);
+            this.txtOgrAdOdeme.TabIndex = 9;
+            // 
+            // lblOgrAdOdeme
+            // 
+            this.lblOgrAdOdeme.AutoSize = true;
+            this.lblOgrAdOdeme.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOgrAdOdeme.Location = new System.Drawing.Point(22, 33);
+            this.lblOgrAdOdeme.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOgrAdOdeme.Name = "lblOgrAdOdeme";
+            this.lblOgrAdOdeme.Size = new System.Drawing.Size(70, 15);
+            this.lblOgrAdOdeme.TabIndex = 8;
+            this.lblOgrAdOdeme.Text = "Öğrenci Adı";
+            // 
+            // btnOdemeAl
+            // 
+            this.btnOdemeAl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOdemeAl.Location = new System.Drawing.Point(182, 112);
+            this.btnOdemeAl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnOdemeAl.Name = "btnOdemeAl";
+            this.btnOdemeAl.Size = new System.Drawing.Size(184, 39);
+            this.btnOdemeAl.TabIndex = 10;
+            this.btnOdemeAl.Text = "Ödeme Yap";
+            this.btnOdemeAl.UseVisualStyleBackColor = true;
+            this.btnOdemeAl.Click += new System.EventHandler(this.btnOdemeAl_Click);
+            // 
             // FrmOdeme
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox3);
+            this.ClientSize = new System.Drawing.Size(580, 519);
+            this.Controls.Add(this.btnOdemeAl);
+            this.Controls.Add(this.txtOgrAdOdeme);
+            this.Controls.Add(this.lblOgrAdOdeme);
+            this.Controls.Add(this.dgwOgrOdeme);
+            this.Controls.Add(this.txtKalanBorc);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtOdenen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtOgrTcOdeme);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmOdeme";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.frmOdeme_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwOgrOdeme)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet4)).EndInit();
             this.ResumeLayout(false);
@@ -175,16 +202,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtOgrTcOdeme;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtOdenen;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtKalanBorc;
         private System.Windows.Forms.Label label3;
         private YurtSistemiDataSet4 yurtSistemiDataSet4;
         private System.Windows.Forms.BindingSource ogrenciBindingSource;
         private YurtSistemiDataSet4TableAdapters.OgrenciTableAdapter ogrenciTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrAdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrSoyadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrTCDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dgwOgrOdeme;
+        private System.Windows.Forms.TextBox txtOgrAdOdeme;
+        private System.Windows.Forms.Label lblOgrAdOdeme;
+        private System.Windows.Forms.Button btnOdemeAl;
     }
 }

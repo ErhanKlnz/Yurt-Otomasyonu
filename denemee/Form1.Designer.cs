@@ -150,7 +150,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(513, 528);
+            this.label7.Location = new System.Drawing.Point(456, 531);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 17);
@@ -161,7 +161,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(493, 557);
+            this.label8.Location = new System.Drawing.Point(436, 560);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 17);
@@ -172,7 +172,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(470, 586);
+            this.label9.Location = new System.Drawing.Point(413, 589);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(101, 17);
@@ -183,7 +183,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(467, 613);
+            this.label10.Location = new System.Drawing.Point(410, 616);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(97, 17);
@@ -194,7 +194,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(486, 647);
+            this.label11.Location = new System.Drawing.Point(429, 650);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 17);
@@ -205,7 +205,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(872, 533);
+            this.label12.Location = new System.Drawing.Point(789, 533);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(48, 17);
@@ -233,7 +233,7 @@
             // txtOgrKan
             // 
             this.txtOgrKan.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtOgrKan.Location = new System.Drawing.Point(598, 557);
+            this.txtOgrKan.Location = new System.Drawing.Point(541, 560);
             this.txtOgrKan.Margin = new System.Windows.Forms.Padding(4);
             this.txtOgrKan.Name = "txtOgrKan";
             this.txtOgrKan.Size = new System.Drawing.Size(226, 25);
@@ -251,7 +251,7 @@
             // txtVeliAdSoyad
             // 
             this.txtVeliAdSoyad.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtVeliAdSoyad.Location = new System.Drawing.Point(598, 615);
+            this.txtVeliAdSoyad.Location = new System.Drawing.Point(541, 618);
             this.txtVeliAdSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtVeliAdSoyad.Name = "txtVeliAdSoyad";
             this.txtVeliAdSoyad.Size = new System.Drawing.Size(226, 25);
@@ -291,7 +291,7 @@
             // mTxtVeliTel
             // 
             this.mTxtVeliTel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mTxtVeliTel.Location = new System.Drawing.Point(598, 647);
+            this.mTxtVeliTel.Location = new System.Drawing.Point(541, 650);
             this.mTxtVeliTel.Margin = new System.Windows.Forms.Padding(4);
             this.mTxtVeliTel.Mask = "(999) 000-0000";
             this.mTxtVeliTel.Name = "mTxtVeliTel";
@@ -302,7 +302,7 @@
             // 
             this.cbxOgrBolum.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cbxOgrBolum.FormattingEnabled = true;
-            this.cbxOgrBolum.Location = new System.Drawing.Point(598, 525);
+            this.cbxOgrBolum.Location = new System.Drawing.Point(541, 528);
             this.cbxOgrBolum.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOgrBolum.Name = "cbxOgrBolum";
             this.cbxOgrBolum.Size = new System.Drawing.Size(226, 25);
@@ -312,7 +312,7 @@
             // 
             this.cbxOdaNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cbxOdaNo.FormattingEnabled = true;
-            this.cbxOdaNo.Location = new System.Drawing.Point(598, 584);
+            this.cbxOdaNo.Location = new System.Drawing.Point(541, 587);
             this.cbxOdaNo.Margin = new System.Windows.Forms.Padding(4);
             this.cbxOdaNo.Name = "cbxOdaNo";
             this.cbxOdaNo.Size = new System.Drawing.Size(226, 25);
@@ -321,7 +321,7 @@
             // rTxtAdres
             // 
             this.rTxtAdres.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rTxtAdres.Location = new System.Drawing.Point(928, 530);
+            this.rTxtAdres.Location = new System.Drawing.Point(845, 530);
             this.rTxtAdres.Margin = new System.Windows.Forms.Padding(4);
             this.rTxtAdres.Name = "rTxtAdres";
             this.rTxtAdres.Size = new System.Drawing.Size(223, 113);
@@ -331,10 +331,10 @@
             // btnOgrEkle
             // 
             this.btnOgrEkle.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOgrEkle.Location = new System.Drawing.Point(928, 307);
+            this.btnOgrEkle.Location = new System.Drawing.Point(820, 184);
             this.btnOgrEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnOgrEkle.Name = "btnOgrEkle";
-            this.btnOgrEkle.Size = new System.Drawing.Size(152, 25);
+            this.btnOgrEkle.Size = new System.Drawing.Size(152, 40);
             this.btnOgrEkle.TabIndex = 24;
             this.btnOgrEkle.Text = "Ekle";
             this.btnOgrEkle.UseVisualStyleBackColor = true;
@@ -343,10 +343,10 @@
             // btnDuzenle
             // 
             this.btnDuzenle.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDuzenle.Location = new System.Drawing.Point(928, 373);
+            this.btnDuzenle.Location = new System.Drawing.Point(820, 250);
             this.btnDuzenle.Margin = new System.Windows.Forms.Padding(4);
             this.btnDuzenle.Name = "btnDuzenle";
-            this.btnDuzenle.Size = new System.Drawing.Size(152, 25);
+            this.btnDuzenle.Size = new System.Drawing.Size(152, 40);
             this.btnDuzenle.TabIndex = 25;
             this.btnDuzenle.Text = "Düzenle";
             this.btnDuzenle.UseVisualStyleBackColor = true;
@@ -355,10 +355,10 @@
             // btnSil
             // 
             this.btnSil.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSil.Location = new System.Drawing.Point(928, 433);
+            this.btnSil.Location = new System.Drawing.Point(820, 310);
             this.btnSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(152, 25);
+            this.btnSil.Size = new System.Drawing.Size(152, 40);
             this.btnSil.TabIndex = 26;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
@@ -469,7 +469,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 710);
+            this.ClientSize = new System.Drawing.Size(1167, 710);
             this.Controls.Add(this.dgwOgrIslem);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnDuzenle);

@@ -179,4 +179,4 @@ namespace denemee
 
 
 
-//Dat//a Source=ERHAN;Initial Catalog=YurtSistemi;Integrated Security=True//
+//Data Source=ERHAN;Initial Catalog=YurtSistemi;Integrated Security=True//

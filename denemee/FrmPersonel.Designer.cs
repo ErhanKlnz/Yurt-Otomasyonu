@@ -47,9 +47,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.personelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiDataSet7 = new denemee.YurtSistemiDataSet7();
-            this.personelTableAdapter = new denemee.YurtSistemiDataSet7TableAdapters.PersonelTableAdapter();
             this.perAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +54,9 @@
             this.cinsiyetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kanGrupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet7 = new denemee.YurtSistemiDataSet7();
+            this.personelTableAdapter = new denemee.YurtSistemiDataSet7TableAdapters.PersonelTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet7)).BeginInit();
@@ -122,7 +122,7 @@
             // 
             this.mtxtPerTel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.mtxtPerTel.Location = new System.Drawing.Point(124, 188);
-            this.mtxtPerTel.Mask = "00000000000";
+            this.mtxtPerTel.Mask = "0000000000";
             this.mtxtPerTel.Name = "mtxtPerTel";
             this.mtxtPerTel.Size = new System.Drawing.Size(194, 25);
             this.mtxtPerTel.TabIndex = 15;
@@ -238,27 +238,13 @@
             this.kanGrupDataGridViewTextBoxColumn,
             this.departmanDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.personelBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(341, 58);
+            this.dataGridView1.Location = new System.Drawing.Point(329, 58);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(660, 186);
+            this.dataGridView1.Size = new System.Drawing.Size(672, 186);
             this.dataGridView1.TabIndex = 26;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // personelBindingSource
-            // 
-            this.personelBindingSource.DataMember = "Personel";
-            this.personelBindingSource.DataSource = this.yurtSistemiDataSet7;
-            // 
-            // yurtSistemiDataSet7
-            // 
-            this.yurtSistemiDataSet7.DataSetName = "YurtSistemiDataSet7";
-            this.yurtSistemiDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // personelTableAdapter
-            // 
-            this.personelTableAdapter.ClearBeforeFill = true;
             // 
             // perAdDataGridViewTextBoxColumn
             // 
@@ -316,6 +302,20 @@
             this.departmanDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.departmanDataGridViewTextBoxColumn.Name = "departmanDataGridViewTextBoxColumn";
             this.departmanDataGridViewTextBoxColumn.Width = 82;
+            // 
+            // personelBindingSource
+            // 
+            this.personelBindingSource.DataMember = "Personel";
+            this.personelBindingSource.DataSource = this.yurtSistemiDataSet7;
+            // 
+            // yurtSistemiDataSet7
+            // 
+            this.yurtSistemiDataSet7.DataSetName = "YurtSistemiDataSet7";
+            this.yurtSistemiDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // personelTableAdapter
+            // 
+            this.personelTableAdapter.ClearBeforeFill = true;
             // 
             // FrmPersonel
             // 
