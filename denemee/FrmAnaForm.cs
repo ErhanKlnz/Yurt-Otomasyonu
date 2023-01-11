@@ -63,7 +63,8 @@ namespace denemee
 
         private void ödemeAlToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            FrmOdeme odeme = new FrmOdeme();
+            odeme.Show();
         }
     }
 }

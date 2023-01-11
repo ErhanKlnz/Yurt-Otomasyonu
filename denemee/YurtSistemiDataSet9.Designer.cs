@@ -303,8 +303,6 @@ namespace denemee {
             
             private global::System.Data.DataColumn columnOgrAdres;
             
-            private global::System.Data.DataColumn columnUcret;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public OgrenciDataTable() {
@@ -436,14 +434,6 @@ namespace denemee {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn UcretColumn {
-                get {
-                    return this.columnUcret;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -479,7 +469,7 @@ namespace denemee {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public OgrenciRow AddOgrenciRow(string OgrAd, string OgrSoyad, string OgrTC, string DogTarih, string OgrMail, string OgrTelNo, string Bolum_Id, string KanGrup, string OdaNo, string VeliAdSoyad, string VeliTelNo, string OgrAdres, decimal Ucret) {
+            public OgrenciRow AddOgrenciRow(string OgrAd, string OgrSoyad, string OgrTC, string DogTarih, string OgrMail, string OgrTelNo, string Bolum_Id, string KanGrup, string OdaNo, string VeliAdSoyad, string VeliTelNo, string OgrAdres) {
                 OgrenciRow rowOgrenciRow = ((OgrenciRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         OgrAd,
@@ -493,8 +483,7 @@ namespace denemee {
                         OdaNo,
                         VeliAdSoyad,
                         VeliTelNo,
-                        OgrAdres,
-                        Ucret};
+                        OgrAdres};
                 rowOgrenciRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowOgrenciRow);
                 return rowOgrenciRow;
@@ -536,7 +525,6 @@ namespace denemee {
                 this.columnVeliAdSoyad = base.Columns["VeliAdSoyad"];
                 this.columnVeliTelNo = base.Columns["VeliTelNo"];
                 this.columnOgrAdres = base.Columns["OgrAdres"];
-                this.columnUcret = base.Columns["Ucret"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -566,8 +554,6 @@ namespace denemee {
                 base.Columns.Add(this.columnVeliTelNo);
                 this.columnOgrAdres = new global::System.Data.DataColumn("OgrAdres", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOgrAdres);
-                this.columnUcret = new global::System.Data.DataColumn("Ucret", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnUcret);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnOgrTC}, true));
                 this.columnOgrAd.AllowDBNull = false;
@@ -905,22 +891,6 @@ namespace denemee {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal Ucret {
-                get {
-                    try {
-                        return ((decimal)(this[this.tableOgrenci.UcretColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Ucret\' in table \'Ogrenci\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableOgrenci.UcretColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDogTarihNull() {
                 return this.IsNull(this.tableOgrenci.DogTarihColumn);
             }
@@ -1025,18 +995,6 @@ namespace denemee {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetOgrAdresNull() {
                 this[this.tableOgrenci.OgrAdresColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsUcretNull() {
-                return this.IsNull(this.tableOgrenci.UcretColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetUcretNull() {
-                this[this.tableOgrenci.UcretColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1211,11 +1169,10 @@ namespace denemee.YurtSistemiDataSet9TableAdapters {
             tableMapping.ColumnMappings.Add("VeliAdSoyad", "VeliAdSoyad");
             tableMapping.ColumnMappings.Add("VeliTelNo", "VeliTelNo");
             tableMapping.ColumnMappings.Add("OgrAdres", "OgrAdres");
-            tableMapping.ColumnMappings.Add("Ucret", "Ucret");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Ogrenci] WHERE (([OgrAd] = @Original_OgrAd) AND ([OgrSoyad] = @Original_OgrSoyad) AND ([OgrTC] = @Original_OgrTC) AND ((@IsNull_DogTarih = 1 AND [DogTarih] IS NULL) OR ([DogTarih] = @Original_DogTarih)) AND ((@IsNull_OgrMail = 1 AND [OgrMail] IS NULL) OR ([OgrMail] = @Original_OgrMail)) AND ((@IsNull_OgrTelNo = 1 AND [OgrTelNo] IS NULL) OR ([OgrTelNo] = @Original_OgrTelNo)) AND ((@IsNull_Bolum_Id = 1 AND [Bolum_Id] IS NULL) OR ([Bolum_Id] = @Original_Bolum_Id)) AND ((@IsNull_KanGrup = 1 AND [KanGrup] IS NULL) OR ([KanGrup] = @Original_KanGrup)) AND ((@IsNull_OdaNo = 1 AND [OdaNo] IS NULL) OR ([OdaNo] = @Original_OdaNo)) AND ((@IsNull_VeliAdSoyad = 1 AND [VeliAdSoyad] IS NULL) OR ([VeliAdSoyad] = @Original_VeliAdSoyad)) AND ((@IsNull_VeliTelNo = 1 AND [VeliTelNo] IS NULL) OR ([VeliTelNo] = @Original_VeliTelNo)) AND ((@IsNull_OgrAdres = 1 AND [OgrAdres] IS NULL) OR ([OgrAdres] = @Original_OgrAdres)) AND ((@IsNull_Ucret = 1 AND [Ucret] IS NULL) OR ([Ucret] = @Original_Ucret)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Ogrenci] WHERE (([OgrAd] = @Original_OgrAd) AND ([OgrSoyad] = @Original_OgrSoyad) AND ([OgrTC] = @Original_OgrTC) AND ((@IsNull_DogTarih = 1 AND [DogTarih] IS NULL) OR ([DogTarih] = @Original_DogTarih)) AND ((@IsNull_OgrMail = 1 AND [OgrMail] IS NULL) OR ([OgrMail] = @Original_OgrMail)) AND ((@IsNull_OgrTelNo = 1 AND [OgrTelNo] IS NULL) OR ([OgrTelNo] = @Original_OgrTelNo)) AND ((@IsNull_Bolum_Id = 1 AND [Bolum_Id] IS NULL) OR ([Bolum_Id] = @Original_Bolum_Id)) AND ((@IsNull_KanGrup = 1 AND [KanGrup] IS NULL) OR ([KanGrup] = @Original_KanGrup)) AND ((@IsNull_OdaNo = 1 AND [OdaNo] IS NULL) OR ([OdaNo] = @Original_OdaNo)) AND ((@IsNull_VeliAdSoyad = 1 AND [VeliAdSoyad] IS NULL) OR ([VeliAdSoyad] = @Original_VeliAdSoyad)) AND ((@IsNull_VeliTelNo = 1 AND [VeliTelNo] IS NULL) OR ([VeliTelNo] = @Original_VeliTelNo)) AND ((@IsNull_OgrAdres = 1 AND [OgrAdres] IS NULL) OR ([OgrAdres] = @Original_OgrAdres)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OgrAd", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrAd", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OgrSoyad", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrSoyad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1238,12 +1195,10 @@ namespace denemee.YurtSistemiDataSet9TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VeliTelNo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VeliTelNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OgrAdres", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrAdres", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OgrAdres", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrAdres", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ucret", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ucret", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ucret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ucret", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Ogrenci] ([OgrAd], [OgrSoyad], [OgrTC], [DogTarih], [OgrMail], [OgrTelNo], [Bolum_Id], [KanGrup], [OdaNo], [VeliAdSoyad], [VeliTelNo], [OgrAdres], [Ucret]) VALUES (@OgrAd, @OgrSoyad, @OgrTC, @DogTarih, @OgrMail, @OgrTelNo, @Bolum_Id, @KanGrup, @OdaNo, @VeliAdSoyad, @VeliTelNo, @OgrAdres, @Ucret);
-SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, OdaNo, VeliAdSoyad, VeliTelNo, OgrAdres, Ucret FROM Ogrenci WHERE (OgrTC = @OgrTC)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Ogrenci] ([OgrAd], [OgrSoyad], [OgrTC], [DogTarih], [OgrMail], [OgrTelNo], [Bolum_Id], [KanGrup], [OdaNo], [VeliAdSoyad], [VeliTelNo], [OgrAdres]) VALUES (@OgrAd, @OgrSoyad, @OgrTC, @DogTarih, @OgrMail, @OgrTelNo, @Bolum_Id, @KanGrup, @OdaNo, @VeliAdSoyad, @VeliTelNo, @OgrAdres);
+SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, OdaNo, VeliAdSoyad, VeliTelNo, OgrAdres FROM Ogrenci WHERE (OgrTC = @OgrTC)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OgrAd", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrAd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OgrSoyad", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrSoyad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1257,11 +1212,10 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VeliAdSoyad", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VeliAdSoyad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VeliTelNo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VeliTelNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OgrAdres", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrAdres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ucret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ucret", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Ogrenci] SET [OgrAd] = @OgrAd, [OgrSoyad] = @OgrSoyad, [OgrTC] = @OgrTC, [DogTarih] = @DogTarih, [OgrMail] = @OgrMail, [OgrTelNo] = @OgrTelNo, [Bolum_Id] = @Bolum_Id, [KanGrup] = @KanGrup, [OdaNo] = @OdaNo, [VeliAdSoyad] = @VeliAdSoyad, [VeliTelNo] = @VeliTelNo, [OgrAdres] = @OgrAdres, [Ucret] = @Ucret WHERE (([OgrAd] = @Original_OgrAd) AND ([OgrSoyad] = @Original_OgrSoyad) AND ([OgrTC] = @Original_OgrTC) AND ((@IsNull_DogTarih = 1 AND [DogTarih] IS NULL) OR ([DogTarih] = @Original_DogTarih)) AND ((@IsNull_OgrMail = 1 AND [OgrMail] IS NULL) OR ([OgrMail] = @Original_OgrMail)) AND ((@IsNull_OgrTelNo = 1 AND [OgrTelNo] IS NULL) OR ([OgrTelNo] = @Original_OgrTelNo)) AND ((@IsNull_Bolum_Id = 1 AND [Bolum_Id] IS NULL) OR ([Bolum_Id] = @Original_Bolum_Id)) AND ((@IsNull_KanGrup = 1 AND [KanGrup] IS NULL) OR ([KanGrup] = @Original_KanGrup)) AND ((@IsNull_OdaNo = 1 AND [OdaNo] IS NULL) OR ([OdaNo] = @Original_OdaNo)) AND ((@IsNull_VeliAdSoyad = 1 AND [VeliAdSoyad] IS NULL) OR ([VeliAdSoyad] = @Original_VeliAdSoyad)) AND ((@IsNull_VeliTelNo = 1 AND [VeliTelNo] IS NULL) OR ([VeliTelNo] = @Original_VeliTelNo)) AND ((@IsNull_OgrAdres = 1 AND [OgrAdres] IS NULL) OR ([OgrAdres] = @Original_OgrAdres)) AND ((@IsNull_Ucret = 1 AND [Ucret] IS NULL) OR ([Ucret] = @Original_Ucret)));
-SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, OdaNo, VeliAdSoyad, VeliTelNo, OgrAdres, Ucret FROM Ogrenci WHERE (OgrTC = @OgrTC)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Ogrenci] SET [OgrAd] = @OgrAd, [OgrSoyad] = @OgrSoyad, [OgrTC] = @OgrTC, [DogTarih] = @DogTarih, [OgrMail] = @OgrMail, [OgrTelNo] = @OgrTelNo, [Bolum_Id] = @Bolum_Id, [KanGrup] = @KanGrup, [OdaNo] = @OdaNo, [VeliAdSoyad] = @VeliAdSoyad, [VeliTelNo] = @VeliTelNo, [OgrAdres] = @OgrAdres WHERE (([OgrAd] = @Original_OgrAd) AND ([OgrSoyad] = @Original_OgrSoyad) AND ([OgrTC] = @Original_OgrTC) AND ((@IsNull_DogTarih = 1 AND [DogTarih] IS NULL) OR ([DogTarih] = @Original_DogTarih)) AND ((@IsNull_OgrMail = 1 AND [OgrMail] IS NULL) OR ([OgrMail] = @Original_OgrMail)) AND ((@IsNull_OgrTelNo = 1 AND [OgrTelNo] IS NULL) OR ([OgrTelNo] = @Original_OgrTelNo)) AND ((@IsNull_Bolum_Id = 1 AND [Bolum_Id] IS NULL) OR ([Bolum_Id] = @Original_Bolum_Id)) AND ((@IsNull_KanGrup = 1 AND [KanGrup] IS NULL) OR ([KanGrup] = @Original_KanGrup)) AND ((@IsNull_OdaNo = 1 AND [OdaNo] IS NULL) OR ([OdaNo] = @Original_OdaNo)) AND ((@IsNull_VeliAdSoyad = 1 AND [VeliAdSoyad] IS NULL) OR ([VeliAdSoyad] = @Original_VeliAdSoyad)) AND ((@IsNull_VeliTelNo = 1 AND [VeliTelNo] IS NULL) OR ([VeliTelNo] = @Original_VeliTelNo)) AND ((@IsNull_OgrAdres = 1 AND [OgrAdres] IS NULL) OR ([OgrAdres] = @Original_OgrAdres)));
+SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, OdaNo, VeliAdSoyad, VeliTelNo, OgrAdres FROM Ogrenci WHERE (OgrTC = @OgrTC)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OgrAd", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrAd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OgrSoyad", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrSoyad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1275,7 +1229,6 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VeliAdSoyad", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VeliAdSoyad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VeliTelNo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VeliTelNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OgrAdres", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrAdres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ucret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ucret", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OgrAd", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrAd", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OgrSoyad", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrSoyad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OgrTC", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrTC", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1297,8 +1250,6 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VeliTelNo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VeliTelNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OgrAdres", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrAdres", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OgrAdres", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OgrAdres", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ucret", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ucret", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Ucret", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ucret", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1315,7 +1266,7 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, Od" +
-                "aNo, VeliAdSoyad, VeliTelNo, OgrAdres, Ucret FROM dbo.Ogrenci";
+                "aNo, VeliAdSoyad, VeliTelNo, OgrAdres FROM dbo.Ogrenci";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1376,7 +1327,7 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_OgrAd, string Original_OgrSoyad, string Original_OgrTC, string Original_DogTarih, string Original_OgrMail, string Original_OgrTelNo, string Original_Bolum_Id, string Original_KanGrup, string Original_OdaNo, string Original_VeliAdSoyad, string Original_VeliTelNo, string Original_OgrAdres, global::System.Nullable<decimal> Original_Ucret) {
+        public virtual int Delete(string Original_OgrAd, string Original_OgrSoyad, string Original_OgrTC, string Original_DogTarih, string Original_OgrMail, string Original_OgrTelNo, string Original_Bolum_Id, string Original_KanGrup, string Original_OdaNo, string Original_VeliAdSoyad, string Original_VeliTelNo, string Original_OgrAdres) {
             if ((Original_OgrAd == null)) {
                 throw new global::System.ArgumentNullException("Original_OgrAd");
             }
@@ -1467,14 +1418,6 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_OgrAdres));
             }
-            if ((Original_Ucret.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((decimal)(Original_Ucret.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[22].Value = global::System.DBNull.Value;
-            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1495,7 +1438,7 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string OgrAd, string OgrSoyad, string OgrTC, string DogTarih, string OgrMail, string OgrTelNo, string Bolum_Id, string KanGrup, string OdaNo, string VeliAdSoyad, string VeliTelNo, string OgrAdres, global::System.Nullable<decimal> Ucret) {
+        public virtual int Insert(string OgrAd, string OgrSoyad, string OgrTC, string DogTarih, string OgrMail, string OgrTelNo, string Bolum_Id, string KanGrup, string OdaNo, string VeliAdSoyad, string VeliTelNo, string OgrAdres) {
             if ((OgrAd == null)) {
                 throw new global::System.ArgumentNullException("OgrAd");
             }
@@ -1568,12 +1511,6 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
             else {
                 this.Adapter.InsertCommand.Parameters[11].Value = ((string)(OgrAdres));
             }
-            if ((Ucret.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((decimal)(Ucret.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1607,7 +1544,6 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
                     string VeliAdSoyad, 
                     string VeliTelNo, 
                     string OgrAdres, 
-                    global::System.Nullable<decimal> Ucret, 
                     string Original_OgrAd, 
                     string Original_OgrSoyad, 
                     string Original_OgrTC, 
@@ -1619,8 +1555,7 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
                     string Original_OdaNo, 
                     string Original_VeliAdSoyad, 
                     string Original_VeliTelNo, 
-                    string Original_OgrAdres, 
-                    global::System.Nullable<decimal> Original_Ucret) {
+                    string Original_OgrAdres) {
             if ((OgrAd == null)) {
                 throw new global::System.ArgumentNullException("OgrAd");
             }
@@ -1693,109 +1628,95 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
             else {
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(OgrAdres));
             }
-            if ((Ucret.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((decimal)(Ucret.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
             if ((Original_OgrAd == null)) {
                 throw new global::System.ArgumentNullException("Original_OgrAd");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_OgrAd));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_OgrAd));
             }
             if ((Original_OgrSoyad == null)) {
                 throw new global::System.ArgumentNullException("Original_OgrSoyad");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_OgrSoyad));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_OgrSoyad));
             }
             if ((Original_OgrTC == null)) {
                 throw new global::System.ArgumentNullException("Original_OgrTC");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_OgrTC));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_OgrTC));
             }
             if ((Original_DogTarih == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_DogTarih));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_DogTarih));
             }
             if ((Original_OgrMail == null)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_OgrMail));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_OgrMail));
             }
             if ((Original_OgrTelNo == null)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_OgrTelNo));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_OgrTelNo));
             }
             if ((Original_Bolum_Id == null)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_Bolum_Id));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_Bolum_Id));
             }
             if ((Original_KanGrup == null)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_KanGrup));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_KanGrup));
             }
             if ((Original_OdaNo == null)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_OdaNo));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_OdaNo));
             }
             if ((Original_VeliAdSoyad == null)) {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_VeliAdSoyad));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_VeliAdSoyad));
             }
             if ((Original_VeliTelNo == null)) {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_VeliTelNo));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_VeliTelNo));
             }
             if ((Original_OgrAdres == null)) {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[32].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_OgrAdres));
-            }
-            if ((Original_Ucret.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((decimal)(Original_Ucret.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((string)(Original_OgrAdres));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1829,7 +1750,6 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
                     string VeliAdSoyad, 
                     string VeliTelNo, 
                     string OgrAdres, 
-                    global::System.Nullable<decimal> Ucret, 
                     string Original_OgrAd, 
                     string Original_OgrSoyad, 
                     string Original_OgrTC, 
@@ -1841,9 +1761,8 @@ SELECT OgrAd, OgrSoyad, OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, O
                     string Original_OdaNo, 
                     string Original_VeliAdSoyad, 
                     string Original_VeliTelNo, 
-                    string Original_OgrAdres, 
-                    global::System.Nullable<decimal> Original_Ucret) {
-            return this.Update(OgrAd, OgrSoyad, Original_OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, OdaNo, VeliAdSoyad, VeliTelNo, OgrAdres, Ucret, Original_OgrAd, Original_OgrSoyad, Original_OgrTC, Original_DogTarih, Original_OgrMail, Original_OgrTelNo, Original_Bolum_Id, Original_KanGrup, Original_OdaNo, Original_VeliAdSoyad, Original_VeliTelNo, Original_OgrAdres, Original_Ucret);
+                    string Original_OgrAdres) {
+            return this.Update(OgrAd, OgrSoyad, Original_OgrTC, DogTarih, OgrMail, OgrTelNo, Bolum_Id, KanGrup, OdaNo, VeliAdSoyad, VeliTelNo, OgrAdres, Original_OgrAd, Original_OgrSoyad, Original_OgrTC, Original_DogTarih, Original_OgrMail, Original_OgrTelNo, Original_Bolum_Id, Original_KanGrup, Original_OdaNo, Original_VeliAdSoyad, Original_VeliTelNo, Original_OgrAdres);
         }
     }
     

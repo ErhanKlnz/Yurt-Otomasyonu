@@ -75,6 +75,18 @@
     <Compile Include="FrmAnaForm.Designer.cs">
       <DependentUpon>FrmAnaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOdeme.Designer.cs">
+      <DependentUpon>FrmOdeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrArama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrArama.designer.cs">
+      <DependentUpon>FrmOgrArama.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPersonel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtSistemiDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtSistemiDataSet112.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtSistemiDataSet112.xsd</DependentUpon>
     </Compile>
     <Compile Include="YurtSistemiDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -157,6 +174,12 @@
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmOdeme.resx">
+      <DependentUpon>FrmOdeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrArama.resx">
+      <DependentUpon>FrmOgrArama.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPersonel.resx">
       <DependentUpon>FrmPersonel.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +191,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="sifreislemleri.resx">
       <DependentUpon>sifreislemleri.cs</DependentUpon>
@@ -224,6 +248,17 @@
     </None>
     <None Include="YurtSistemiDataSet10.xss">
       <DependentUpon>YurtSistemiDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="YurtSistemiDataSet112.xsc">
+      <DependentUpon>YurtSistemiDataSet112.xsd</DependentUpon>
+    </None>
+    <None Include="YurtSistemiDataSet112.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtSistemiDataSet112.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtSistemiDataSet112.xss">
+      <DependentUpon>YurtSistemiDataSet112.xsd</DependentUpon>
     </None>
     <None Include="YurtSistemiDataSet2.xsc">
       <DependentUpon>YurtSistemiDataSet2.xsd</DependentUpon>
@@ -316,6 +351,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-client-901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guncelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

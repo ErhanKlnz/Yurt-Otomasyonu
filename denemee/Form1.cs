@@ -23,8 +23,9 @@ namespace denemee
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'yurtSistemiDataSet9.Ogrenci' table. You can move, or remove it, as needed.
-            this.ogrenciTableAdapter2.Fill(this.yurtSistemiDataSet9.Ogrenci);
+            // TODO: This line of code loads data into the 'yurtSistemiDataSet11.Ogrenci' table. You can move, or remove it, as needed.
+            this.ogrenciTableAdapter3.Fill(this.yurtSistemiDataSet11.Ogrenci);
+          
             
 
 
@@ -75,7 +76,7 @@ namespace denemee
 
 
 
-                this.ogrenciTableAdapter2.Fill(this.yurtSistemiDataSet9.Ogrenci);
+                this.ogrenciTableAdapter3.Fill(this.yurtSistemiDataSet11.Ogrenci);
                 bgl.baglanti().Close();
             }
             catch (Exception)
@@ -94,7 +95,7 @@ namespace denemee
                 komut5.ExecuteNonQuery();
                 bgl.baglanti().Close();
                 MessageBox.Show("Silme işlemi gerçekleştirildi");
-                this.ogrenciTableAdapter2.Fill(this.yurtSistemiDataSet9.Ogrenci);
+                this.ogrenciTableAdapter3.Fill(this.yurtSistemiDataSet11.Ogrenci);
             }
             catch (Exception)
             {
@@ -127,7 +128,7 @@ namespace denemee
 
             bgl.baglanti().Close();
             MessageBox.Show("Düzenleme işlemi gerçekleştirildi");
-            this.ogrenciTableAdapter2.Fill(this.yurtSistemiDataSet9.Ogrenci);
+            this.ogrenciTableAdapter3.Fill(this.yurtSistemiDataSet11.Ogrenci);
 
 
         }
@@ -137,9 +138,10 @@ namespace denemee
         {
 
 
-            string ogrAd, ogrSoyad, ogrTc, ogrDogTarih, ogrMail, ogrTelNo, bolum_Id, kanGrup, odaNo, veliAdSoyad, veliTelNo, ogrAdres;
+            string ogrId, ogrAd, ogrSoyad, ogrTc, ogrDogTarih, ogrMail, ogrTelNo, bolum_Id, kanGrup, odaNo, veliAdSoyad, veliTelNo, ogrAdres;
 
             secilen = dgwOgrIslem.SelectedCells[0].RowIndex;
+            ogrId = dgwOgrIslem.Rows[secilen].Cells[0].Value.ToString();
             ogrAd = dgwOgrIslem.Rows[secilen].Cells[1].Value.ToString();
             ogrSoyad = dgwOgrIslem.Rows[secilen].Cells[2].Value.ToString();
             ogrTc = dgwOgrIslem.Rows[secilen].Cells[3].Value.ToString();
@@ -153,6 +155,7 @@ namespace denemee
             veliTelNo = dgwOgrIslem.Rows[secilen].Cells[11].Value.ToString();
             ogrAdres = dgwOgrIslem.Rows[secilen].Cells[12].Value.ToString();
 
+           
             txtOgrAd.Text = ogrAd;
             txtOgrSoyad.Text = ogrSoyad;
             mTxtOgrTc.Text = ogrTc;
@@ -170,7 +173,18 @@ namespace denemee
 
         }
 
-        
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.ogrenciTableAdapter3.Fill(this.yurtSistemiDataSet11.Ogrenci);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }
 

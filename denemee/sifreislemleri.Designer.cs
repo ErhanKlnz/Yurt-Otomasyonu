@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sifreislemleri));
             this.txtsifre = new System.Windows.Forms.TextBox();
             this.txtkullanıcıadi = new System.Windows.Forms.TextBox();
             this.labe2 = new System.Windows.Forms.Label();
@@ -39,15 +40,15 @@
             this.btngüncelle = new System.Windows.Forms.Button();
             this.btnsil = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yurtSistemiDataSet6 = new denemee.YurtSistemiDataSet6();
-            this.yoneticiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.yoneticiTableAdapter = new denemee.YurtSistemiDataSet6TableAdapters.YoneticiTableAdapter();
             this.kullaniciAdiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sifreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yoneticiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet6 = new denemee.YurtSistemiDataSet6();
+            this.yoneticiTableAdapter = new denemee.YurtSistemiDataSet6TableAdapters.YoneticiTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yoneticiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet6)).BeginInit();
             this.SuspendLayout();
             // 
             // txtsifre
@@ -152,20 +153,6 @@
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // yurtSistemiDataSet6
-            // 
-            this.yurtSistemiDataSet6.DataSetName = "YurtSistemiDataSet6";
-            this.yurtSistemiDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // yoneticiBindingSource
-            // 
-            this.yoneticiBindingSource.DataMember = "Yonetici";
-            this.yoneticiBindingSource.DataSource = this.yurtSistemiDataSet6;
-            // 
-            // yoneticiTableAdapter
-            // 
-            this.yoneticiTableAdapter.ClearBeforeFill = true;
-            // 
             // kullaniciAdiDataGridViewTextBoxColumn
             // 
             this.kullaniciAdiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -193,6 +180,20 @@
             this.perTCDataGridViewTextBoxColumn.Name = "perTCDataGridViewTextBoxColumn";
             this.perTCDataGridViewTextBoxColumn.Width = 75;
             // 
+            // yoneticiBindingSource
+            // 
+            this.yoneticiBindingSource.DataMember = "Yonetici";
+            this.yoneticiBindingSource.DataSource = this.yurtSistemiDataSet6;
+            // 
+            // yurtSistemiDataSet6
+            // 
+            this.yurtSistemiDataSet6.DataSetName = "YurtSistemiDataSet6";
+            this.yurtSistemiDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // yoneticiTableAdapter
+            // 
+            this.yoneticiTableAdapter.ClearBeforeFill = true;
+            // 
             // sifreislemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -208,14 +209,15 @@
             this.Controls.Add(this.txtkullanıcıadi);
             this.Controls.Add(this.labe2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "sifreislemleri";
-            this.Text = "sifreislemleri";
+            this.Text = "Kullanıcı İşlemleri";
             this.Load += new System.EventHandler(this.sifreislemleri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yoneticiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

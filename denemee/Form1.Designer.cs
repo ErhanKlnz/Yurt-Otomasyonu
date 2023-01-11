@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblOgrAd = new System.Windows.Forms.Label();
             this.lblOgrSoyad = new System.Windows.Forms.Label();
             this.lblOgrTc = new System.Windows.Forms.Label();
@@ -57,27 +58,43 @@
             this.btnDuzenle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.dgwOgrIslem = new System.Windows.Forms.DataGridView();
-            this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrTelNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DogTarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrenciBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiDataSet9 = new denemee.YurtSistemiDataSet9();
             this.ogrenciBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.yurtSistemiDataSet8 = new denemee.YurtSistemiDataSet8();
             this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtSistemiDataSet3 = new denemee.YurtSistemiDataSet3();
             this.ogrenciTableAdapter = new denemee.YurtSistemiDataSet3TableAdapters.OgrenciTableAdapter();
             this.ogrenciTableAdapter1 = new denemee.YurtSistemiDataSet8TableAdapters.OgrenciTableAdapter();
+            this.ogrenciBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet9 = new denemee.YurtSistemiDataSet9();
             this.ogrenciTableAdapter2 = new denemee.YurtSistemiDataSet9TableAdapters.OgrenciTableAdapter();
+            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
+            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.ogrenciBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet11 = new denemee.YurtSistemiDataSet11();
+            this.ogrenciTableAdapter3 = new denemee.YurtSistemiDataSet11TableAdapters.OgrenciTableAdapter();
+            this.OgrId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DogTarih = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OgrMail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OgrTelNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Bolum_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KanGrup = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OdaNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VeliAdSoyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VeliTelNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OgrAdres = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgwOgrIslem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet9)).BeginInit();
+            this.fillByToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // lblOgrAd
@@ -331,7 +348,7 @@
             // btnOgrEkle
             // 
             this.btnOgrEkle.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOgrEkle.Location = new System.Drawing.Point(820, 184);
+            this.btnOgrEkle.Location = new System.Drawing.Point(978, 272);
             this.btnOgrEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnOgrEkle.Name = "btnOgrEkle";
             this.btnOgrEkle.Size = new System.Drawing.Size(152, 40);
@@ -343,7 +360,7 @@
             // btnDuzenle
             // 
             this.btnDuzenle.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDuzenle.Location = new System.Drawing.Point(820, 250);
+            this.btnDuzenle.Location = new System.Drawing.Point(978, 338);
             this.btnDuzenle.Margin = new System.Windows.Forms.Padding(4);
             this.btnDuzenle.Name = "btnDuzenle";
             this.btnDuzenle.Size = new System.Drawing.Size(152, 40);
@@ -355,7 +372,7 @@
             // btnSil
             // 
             this.btnSil.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSil.Location = new System.Drawing.Point(820, 310);
+            this.btnSil.Location = new System.Drawing.Point(978, 398);
             this.btnSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(152, 40);
@@ -369,69 +386,27 @@
             this.dgwOgrIslem.AutoGenerateColumns = false;
             this.dgwOgrIslem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwOgrIslem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.OgrId,
             this.ogrAdDataGridViewTextBoxColumn,
             this.ogrSoyadDataGridViewTextBoxColumn,
             this.ogrTCDataGridViewTextBoxColumn,
-            this.ogrTelNoDataGridViewTextBoxColumn,
-            this.DogTarih});
-            this.dgwOgrIslem.DataSource = this.ogrenciBindingSource2;
-            this.dgwOgrIslem.Location = new System.Drawing.Point(13, 30);
+            this.DogTarih,
+            this.OgrMail,
+            this.OgrTelNo,
+            this.Bolum_Id,
+            this.KanGrup,
+            this.OdaNo,
+            this.VeliAdSoyad,
+            this.VeliTelNo,
+            this.OgrAdres});
+            this.dgwOgrIslem.DataSource = this.ogrenciBindingSource3;
+            this.dgwOgrIslem.Location = new System.Drawing.Point(15, 31);
             this.dgwOgrIslem.Margin = new System.Windows.Forms.Padding(4);
             this.dgwOgrIslem.Name = "dgwOgrIslem";
             this.dgwOgrIslem.RowHeadersWidth = 51;
-            this.dgwOgrIslem.Size = new System.Drawing.Size(700, 386);
+            this.dgwOgrIslem.Size = new System.Drawing.Size(961, 424);
             this.dgwOgrIslem.TabIndex = 27;
             this.dgwOgrIslem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwOgrIslem_CellClick_1);
-            // 
-            // ogrAdDataGridViewTextBoxColumn
-            // 
-            this.ogrAdDataGridViewTextBoxColumn.DataPropertyName = "OgrAd";
-            this.ogrAdDataGridViewTextBoxColumn.HeaderText = "OgrAd";
-            this.ogrAdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrAdDataGridViewTextBoxColumn.Name = "ogrAdDataGridViewTextBoxColumn";
-            this.ogrAdDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ogrSoyadDataGridViewTextBoxColumn
-            // 
-            this.ogrSoyadDataGridViewTextBoxColumn.DataPropertyName = "OgrSoyad";
-            this.ogrSoyadDataGridViewTextBoxColumn.HeaderText = "OgrSoyad";
-            this.ogrSoyadDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrSoyadDataGridViewTextBoxColumn.Name = "ogrSoyadDataGridViewTextBoxColumn";
-            this.ogrSoyadDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ogrTCDataGridViewTextBoxColumn
-            // 
-            this.ogrTCDataGridViewTextBoxColumn.DataPropertyName = "OgrTC";
-            this.ogrTCDataGridViewTextBoxColumn.HeaderText = "OgrTC";
-            this.ogrTCDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrTCDataGridViewTextBoxColumn.Name = "ogrTCDataGridViewTextBoxColumn";
-            this.ogrTCDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ogrTelNoDataGridViewTextBoxColumn
-            // 
-            this.ogrTelNoDataGridViewTextBoxColumn.DataPropertyName = "OgrTelNo";
-            this.ogrTelNoDataGridViewTextBoxColumn.HeaderText = "OgrTelNo";
-            this.ogrTelNoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrTelNoDataGridViewTextBoxColumn.Name = "ogrTelNoDataGridViewTextBoxColumn";
-            this.ogrTelNoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // DogTarih
-            // 
-            this.DogTarih.DataPropertyName = "DogTarih";
-            this.DogTarih.HeaderText = "DogTarih";
-            this.DogTarih.MinimumWidth = 6;
-            this.DogTarih.Name = "DogTarih";
-            this.DogTarih.Width = 125;
-            // 
-            // ogrenciBindingSource2
-            // 
-            this.ogrenciBindingSource2.DataMember = "Ogrenci";
-            this.ogrenciBindingSource2.DataSource = this.yurtSistemiDataSet9;
-            // 
-            // yurtSistemiDataSet9
-            // 
-            this.yurtSistemiDataSet9.DataSetName = "YurtSistemiDataSet9";
-            this.yurtSistemiDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // ogrenciBindingSource1
             // 
@@ -461,15 +436,164 @@
             // 
             this.ogrenciTableAdapter1.ClearBeforeFill = true;
             // 
+            // ogrenciBindingSource2
+            // 
+            this.ogrenciBindingSource2.DataMember = "Ogrenci";
+            this.ogrenciBindingSource2.DataSource = this.yurtSistemiDataSet9;
+            // 
+            // yurtSistemiDataSet9
+            // 
+            this.yurtSistemiDataSet9.DataSetName = "YurtSistemiDataSet9";
+            this.yurtSistemiDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // ogrenciTableAdapter2
             // 
             this.ogrenciTableAdapter2.ClearBeforeFill = true;
+            // 
+            // fillByToolStrip
+            // 
+            this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fillByToolStripButton});
+            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.fillByToolStrip.Name = "fillByToolStrip";
+            this.fillByToolStrip.Size = new System.Drawing.Size(1167, 27);
+            this.fillByToolStrip.TabIndex = 28;
+            this.fillByToolStrip.Text = "fillByToolStrip";
+            // 
+            // fillByToolStripButton
+            // 
+            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton.Name = "fillByToolStripButton";
+            this.fillByToolStripButton.Size = new System.Drawing.Size(48, 24);
+            this.fillByToolStripButton.Text = "FillBy";
+            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
+            // 
+            // ogrenciBindingSource3
+            // 
+            this.ogrenciBindingSource3.DataMember = "Ogrenci";
+            this.ogrenciBindingSource3.DataSource = this.yurtSistemiDataSet11;
+            // 
+            // yurtSistemiDataSet11
+            // 
+            this.yurtSistemiDataSet11.DataSetName = "YurtSistemiDataSet11";
+            this.yurtSistemiDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciTableAdapter3
+            // 
+            this.ogrenciTableAdapter3.ClearBeforeFill = true;
+            // 
+            // OgrId
+            // 
+            this.OgrId.DataPropertyName = "OgrId";
+            this.OgrId.HeaderText = "OgrId";
+            this.OgrId.MinimumWidth = 6;
+            this.OgrId.Name = "OgrId";
+            this.OgrId.ReadOnly = true;
+            this.OgrId.Width = 125;
+            // 
+            // ogrAdDataGridViewTextBoxColumn
+            // 
+            this.ogrAdDataGridViewTextBoxColumn.DataPropertyName = "OgrAd";
+            this.ogrAdDataGridViewTextBoxColumn.HeaderText = "OgrAd";
+            this.ogrAdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ogrAdDataGridViewTextBoxColumn.Name = "ogrAdDataGridViewTextBoxColumn";
+            this.ogrAdDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ogrSoyadDataGridViewTextBoxColumn
+            // 
+            this.ogrSoyadDataGridViewTextBoxColumn.DataPropertyName = "OgrSoyad";
+            this.ogrSoyadDataGridViewTextBoxColumn.HeaderText = "OgrSoyad";
+            this.ogrSoyadDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ogrSoyadDataGridViewTextBoxColumn.Name = "ogrSoyadDataGridViewTextBoxColumn";
+            this.ogrSoyadDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ogrTCDataGridViewTextBoxColumn
+            // 
+            this.ogrTCDataGridViewTextBoxColumn.DataPropertyName = "OgrTC";
+            this.ogrTCDataGridViewTextBoxColumn.HeaderText = "OgrTC";
+            this.ogrTCDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ogrTCDataGridViewTextBoxColumn.Name = "ogrTCDataGridViewTextBoxColumn";
+            this.ogrTCDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // DogTarih
+            // 
+            this.DogTarih.DataPropertyName = "DogTarih";
+            this.DogTarih.HeaderText = "DogTarih";
+            this.DogTarih.MinimumWidth = 6;
+            this.DogTarih.Name = "DogTarih";
+            this.DogTarih.Width = 125;
+            // 
+            // OgrMail
+            // 
+            this.OgrMail.DataPropertyName = "OgrMail";
+            this.OgrMail.HeaderText = "OgrMail";
+            this.OgrMail.MinimumWidth = 6;
+            this.OgrMail.Name = "OgrMail";
+            this.OgrMail.Width = 125;
+            // 
+            // OgrTelNo
+            // 
+            this.OgrTelNo.DataPropertyName = "OgrTelNo";
+            this.OgrTelNo.HeaderText = "OgrTelNo";
+            this.OgrTelNo.MinimumWidth = 6;
+            this.OgrTelNo.Name = "OgrTelNo";
+            this.OgrTelNo.Width = 125;
+            // 
+            // Bolum_Id
+            // 
+            this.Bolum_Id.DataPropertyName = "Bolum_Id";
+            this.Bolum_Id.HeaderText = "Bolum_Id";
+            this.Bolum_Id.MinimumWidth = 6;
+            this.Bolum_Id.Name = "Bolum_Id";
+            this.Bolum_Id.Width = 125;
+            // 
+            // KanGrup
+            // 
+            this.KanGrup.DataPropertyName = "KanGrup";
+            this.KanGrup.HeaderText = "KanGrup";
+            this.KanGrup.MinimumWidth = 6;
+            this.KanGrup.Name = "KanGrup";
+            this.KanGrup.Width = 125;
+            // 
+            // OdaNo
+            // 
+            this.OdaNo.DataPropertyName = "OdaNo";
+            this.OdaNo.HeaderText = "OdaNo";
+            this.OdaNo.MinimumWidth = 6;
+            this.OdaNo.Name = "OdaNo";
+            this.OdaNo.Width = 125;
+            // 
+            // VeliAdSoyad
+            // 
+            this.VeliAdSoyad.DataPropertyName = "VeliAdSoyad";
+            this.VeliAdSoyad.HeaderText = "VeliAdSoyad";
+            this.VeliAdSoyad.MinimumWidth = 6;
+            this.VeliAdSoyad.Name = "VeliAdSoyad";
+            this.VeliAdSoyad.Width = 125;
+            // 
+            // VeliTelNo
+            // 
+            this.VeliTelNo.DataPropertyName = "VeliTelNo";
+            this.VeliTelNo.HeaderText = "VeliTelNo";
+            this.VeliTelNo.MinimumWidth = 6;
+            this.VeliTelNo.Name = "VeliTelNo";
+            this.VeliTelNo.Width = 125;
+            // 
+            // OgrAdres
+            // 
+            this.OgrAdres.DataPropertyName = "OgrAdres";
+            this.OgrAdres.HeaderText = "OgrAdres";
+            this.OgrAdres.MinimumWidth = 6;
+            this.OgrAdres.Name = "OgrAdres";
+            this.OgrAdres.Width = 125;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 710);
+            this.ClientSize = new System.Drawing.Size(1167, 720);
+            this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.dgwOgrIslem);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnDuzenle);
@@ -498,17 +622,22 @@
             this.Controls.Add(this.lblOgrTc);
             this.Controls.Add(this.lblOgrSoyad);
             this.Controls.Add(this.lblOgrAd);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Öğrenci Düzenle";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwOgrIslem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet9)).EndInit();
+            this.fillByToolStrip.ResumeLayout(false);
+            this.fillByToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -562,10 +691,23 @@
         private YurtSistemiDataSet9 yurtSistemiDataSet9;
         private System.Windows.Forms.BindingSource ogrenciBindingSource2;
         private YurtSistemiDataSet9TableAdapters.OgrenciTableAdapter ogrenciTableAdapter2;
+        private YurtSistemiDataSet11 yurtSistemiDataSet11;
+        private System.Windows.Forms.BindingSource ogrenciBindingSource3;
+        private YurtSistemiDataSet11TableAdapters.OgrenciTableAdapter ogrenciTableAdapter3;
+        private System.Windows.Forms.ToolStrip fillByToolStrip;
+        private System.Windows.Forms.ToolStripButton fillByToolStripButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OgrId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ogrAdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ogrSoyadDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ogrTCDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrTelNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn DogTarih;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OgrMail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OgrTelNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Bolum_Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KanGrup;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OdaNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VeliAdSoyad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VeliTelNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OgrAdres;
     }
 }

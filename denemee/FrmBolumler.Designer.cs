@@ -41,28 +41,28 @@
             this.dgwBolumler = new System.Windows.Forms.DataGridView();
             this.bolumIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bolumAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bolumBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet10 = new denemee.YurtSistemiDataSet10();
             this.bolumBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtSistemiDataSet1 = new denemee.YurtSistemiDataSet1();
             this.bolumTableAdapter = new denemee.YurtSistemiDataSet1TableAdapters.BolumTableAdapter();
-            this.yurtSistemiDataSet10 = new denemee.YurtSistemiDataSet10();
-            this.bolumBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bolumTableAdapter1 = new denemee.YurtSistemiDataSet10TableAdapters.BolumTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumEkle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumDuzenle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumSil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwBolumler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bolumBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bolumBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-708, 137);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(107, 98);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -71,9 +71,9 @@
             // 
             // pcbBolumEkle
             // 
-            this.pcbBolumEkle.Image = ((System.Drawing.Image)(resources.GetObject("pcbBolumEkle.Image")));
+            this.pcbBolumEkle.Image = global::denemee.Properties.Resources.ekle1;
             this.pcbBolumEkle.Location = new System.Drawing.Point(59, 426);
-            this.pcbBolumEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcbBolumEkle.Margin = new System.Windows.Forms.Padding(4);
             this.pcbBolumEkle.Name = "pcbBolumEkle";
             this.pcbBolumEkle.Size = new System.Drawing.Size(107, 98);
             this.pcbBolumEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -83,9 +83,9 @@
             // 
             // pcbBolumDuzenle
             // 
-            this.pcbBolumDuzenle.Image = ((System.Drawing.Image)(resources.GetObject("pcbBolumDuzenle.Image")));
+            this.pcbBolumDuzenle.Image = global::denemee.Properties.Resources.guncelle;
             this.pcbBolumDuzenle.Location = new System.Drawing.Point(173, 426);
-            this.pcbBolumDuzenle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcbBolumDuzenle.Margin = new System.Windows.Forms.Padding(4);
             this.pcbBolumDuzenle.Name = "pcbBolumDuzenle";
             this.pcbBolumDuzenle.Size = new System.Drawing.Size(107, 98);
             this.pcbBolumDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,9 +95,9 @@
             // 
             // pcbBolumSil
             // 
-            this.pcbBolumSil.Image = ((System.Drawing.Image)(resources.GetObject("pcbBolumSil.Image")));
+            this.pcbBolumSil.Image = global::denemee.Properties.Resources.cikar;
             this.pcbBolumSil.Location = new System.Drawing.Point(288, 426);
-            this.pcbBolumSil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcbBolumSil.Margin = new System.Windows.Forms.Padding(4);
             this.pcbBolumSil.Name = "pcbBolumSil";
             this.pcbBolumSil.Size = new System.Drawing.Size(107, 98);
             this.pcbBolumSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,10 +118,9 @@
             // 
             // txtBolumId
             // 
-            this.txtBolumId.Enabled = false;
             this.txtBolumId.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtBolumId.Location = new System.Drawing.Point(104, 306);
-            this.txtBolumId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBolumId.Margin = new System.Windows.Forms.Padding(4);
             this.txtBolumId.Name = "txtBolumId";
             this.txtBolumId.Size = new System.Drawing.Size(289, 25);
             this.txtBolumId.TabIndex = 6;
@@ -130,7 +129,7 @@
             // 
             this.txtBolumAd.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtBolumAd.Location = new System.Drawing.Point(104, 340);
-            this.txtBolumAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBolumAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtBolumAd.Name = "txtBolumAd";
             this.txtBolumAd.Size = new System.Drawing.Size(289, 25);
             this.txtBolumAd.TabIndex = 8;
@@ -155,7 +154,7 @@
             this.bolumAdDataGridViewTextBoxColumn});
             this.dgwBolumler.DataSource = this.bolumBindingSource1;
             this.dgwBolumler.Location = new System.Drawing.Point(457, 18);
-            this.dgwBolumler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgwBolumler.Margin = new System.Windows.Forms.Padding(4);
             this.dgwBolumler.Name = "dgwBolumler";
             this.dgwBolumler.RowHeadersWidth = 51;
             this.dgwBolumler.Size = new System.Drawing.Size(408, 506);
@@ -179,6 +178,16 @@
             this.bolumAdDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bolumAdDataGridViewTextBoxColumn.Name = "bolumAdDataGridViewTextBoxColumn";
             // 
+            // bolumBindingSource1
+            // 
+            this.bolumBindingSource1.DataMember = "Bolum";
+            this.bolumBindingSource1.DataSource = this.yurtSistemiDataSet10;
+            // 
+            // yurtSistemiDataSet10
+            // 
+            this.yurtSistemiDataSet10.DataSetName = "YurtSistemiDataSet10";
+            this.yurtSistemiDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // bolumBindingSource
             // 
             this.bolumBindingSource.DataMember = "Bolum";
@@ -192,16 +201,6 @@
             // bolumTableAdapter
             // 
             this.bolumTableAdapter.ClearBeforeFill = true;
-            // 
-            // yurtSistemiDataSet10
-            // 
-            this.yurtSistemiDataSet10.DataSetName = "YurtSistemiDataSet10";
-            this.yurtSistemiDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bolumBindingSource1
-            // 
-            this.bolumBindingSource1.DataMember = "Bolum";
-            this.bolumBindingSource1.DataSource = this.yurtSistemiDataSet10;
             // 
             // bolumTableAdapter1
             // 
@@ -222,19 +221,20 @@
             this.Controls.Add(this.pcbBolumDuzenle);
             this.Controls.Add(this.pcbBolumEkle);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmBolumler";
-            this.Text = "Form2";
+            this.Text = "Bölümleri Düzenle";
             this.Load += new System.EventHandler(this.FrmBolumler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumEkle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumDuzenle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumSil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwBolumler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bolumBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bolumBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

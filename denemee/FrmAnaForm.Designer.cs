@@ -40,7 +40,6 @@
             this.yöneticiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.şifreİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personelEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bölümlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bölümEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -104,7 +103,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(691, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(691, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -155,8 +154,7 @@
             // 
             this.yöneticiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.şifreİşlemleriToolStripMenuItem,
-            this.personelDüzenleToolStripMenuItem,
-            this.personelEkleToolStripMenuItem});
+            this.personelDüzenleToolStripMenuItem});
             this.yöneticiToolStripMenuItem.Name = "yöneticiToolStripMenuItem";
             this.yöneticiToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.yöneticiToolStripMenuItem.Text = "Yönetici";
@@ -175,12 +173,6 @@
             this.personelDüzenleToolStripMenuItem.Text = "Personel Düzenle";
             this.personelDüzenleToolStripMenuItem.Click += new System.EventHandler(this.personelDüzenleToolStripMenuItem_Click);
             // 
-            // personelEkleToolStripMenuItem
-            // 
-            this.personelEkleToolStripMenuItem.Name = "personelEkleToolStripMenuItem";
-            this.personelEkleToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
-            this.personelEkleToolStripMenuItem.Text = "Personel Ekle";
-            // 
             // bölümlerToolStripMenuItem
             // 
             this.bölümlerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -192,7 +184,7 @@
             // bölümEkleToolStripMenuItem
             // 
             this.bölümEkleToolStripMenuItem.Name = "bölümEkleToolStripMenuItem";
-            this.bölümEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.bölümEkleToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.bölümEkleToolStripMenuItem.Text = "Bölümleri Düzenle";
             this.bölümEkleToolStripMenuItem.Click += new System.EventHandler(this.bölümEkleToolStripMenuItem_Click);
             // 
@@ -422,7 +414,6 @@
         private System.Windows.Forms.ToolStripMenuItem yöneticiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem şifreİşlemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelDüzenleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personelEkleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bölümlerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bölümEkleToolStripMenuItem;
         private System.Windows.Forms.BindingSource yurtSistemiDataSetBindingSource;

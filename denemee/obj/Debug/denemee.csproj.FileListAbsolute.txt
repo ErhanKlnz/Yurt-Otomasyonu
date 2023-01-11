@@ -45,3 +45,5 @@ C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmAdminGiris.reso
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmBolumler.resources
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmPersonel.resources
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.sifreislemleri.resources
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmOdeme.resources
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmOgrArama.resources

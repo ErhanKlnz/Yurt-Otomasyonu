@@ -34,8 +34,9 @@ namespace denemee
             {
                 bgl.baglanti();
                 
-                SqlCommand komut1 = new SqlCommand("insert into Bolum (BolumAd) values (@p1)" , bgl.baglanti());
-                komut1.Parameters.AddWithValue("@p1", txtBolumAd.Text);
+                SqlCommand komut1 = new SqlCommand("insert into Bolum (Bolum_Id,BolumAd) values (@p1,@p2)" , bgl.baglanti());
+                komut1.Parameters.AddWithValue("@p1", txtBolumId.Text);
+                komut1.Parameters.AddWithValue("@p2", txtBolumAd.Text);
                 komut1.ExecuteNonQuery();
                 bgl.baglanti().Close();
                 MessageBox.Show("Bölüm Eklendi!");
