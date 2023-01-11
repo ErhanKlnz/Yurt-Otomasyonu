@@ -89,5 +89,17 @@ namespace denemee
             FrmRapor rap = new FrmRapor(); 
             rap.Show();
         }
+
+        private void yedekVeGeriYüklemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBackRestore back= new FrmBackRestore();
+            back.Show();
+        }
+
+        private void raporAlToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmRapor rap = new FrmRapor();
+            rap.Show();
+        }
     }
 }

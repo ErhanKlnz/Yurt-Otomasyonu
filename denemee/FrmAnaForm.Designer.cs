@@ -71,6 +71,8 @@
             this.personelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelEkleVeDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kullanıcıAyarlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yedeklemeVeRaporlamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yedekVeGeriYüklemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.raporAlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSetBindingSource)).BeginInit();
@@ -275,7 +277,7 @@
             this.bölümlerToolStripMenuItem,
             this.ödemeToolStripMenuItem,
             this.personelToolStripMenuItem,
-            this.raporAlToolStripMenuItem});
+            this.yedeklemeVeRaporlamaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(691, 28);
@@ -366,12 +368,28 @@
             this.kullanıcıAyarlarıToolStripMenuItem.Text = "Kullanıcı Ayarları";
             this.kullanıcıAyarlarıToolStripMenuItem.Click += new System.EventHandler(this.kullanıcıAyarlarıToolStripMenuItem_Click);
             // 
+            // yedeklemeVeRaporlamaToolStripMenuItem
+            // 
+            this.yedeklemeVeRaporlamaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yedekVeGeriYüklemeToolStripMenuItem,
+            this.raporAlToolStripMenuItem});
+            this.yedeklemeVeRaporlamaToolStripMenuItem.Name = "yedeklemeVeRaporlamaToolStripMenuItem";
+            this.yedeklemeVeRaporlamaToolStripMenuItem.Size = new System.Drawing.Size(191, 24);
+            this.yedeklemeVeRaporlamaToolStripMenuItem.Text = "Yedekleme ve Raporlama";
+            // 
+            // yedekVeGeriYüklemeToolStripMenuItem
+            // 
+            this.yedekVeGeriYüklemeToolStripMenuItem.Name = "yedekVeGeriYüklemeToolStripMenuItem";
+            this.yedekVeGeriYüklemeToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
+            this.yedekVeGeriYüklemeToolStripMenuItem.Text = "Yedek ve Geri yükleme";
+            this.yedekVeGeriYüklemeToolStripMenuItem.Click += new System.EventHandler(this.yedekVeGeriYüklemeToolStripMenuItem_Click);
+            // 
             // raporAlToolStripMenuItem
             // 
             this.raporAlToolStripMenuItem.Name = "raporAlToolStripMenuItem";
-            this.raporAlToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.raporAlToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.raporAlToolStripMenuItem.Text = "Rapor Al";
-            this.raporAlToolStripMenuItem.Click += new System.EventHandler(this.raporAlToolStripMenuItem_Click);
+            this.raporAlToolStripMenuItem.Click += new System.EventHandler(this.raporAlToolStripMenuItem_Click_1);
             // 
             // FrmAnaForm
             // 
@@ -454,6 +472,8 @@
         private System.Windows.Forms.ToolStripMenuItem kullanıcıAyarlarıToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kayıtSildirenÖğrencilerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem girişÇıkışKayıtlarıToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yedeklemeVeRaporlamaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yedekVeGeriYüklemeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem raporAlToolStripMenuItem;
     }
 }
