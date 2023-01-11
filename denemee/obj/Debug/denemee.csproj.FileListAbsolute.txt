@@ -51,3 +51,4 @@ C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmSilinmisOgr.res
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.Frmkullanici.resources
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmPersonelGiriş.resources
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmAnasayfaPersonel.resources
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmBackRestore.resources

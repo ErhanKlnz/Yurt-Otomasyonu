@@ -48,9 +48,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.personelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiDataSet7 = new denemee.YurtSistemiDataSet7();
-            this.personelTableAdapter = new denemee.YurtSistemiDataSet7TableAdapters.PersonelTableAdapter();
             this.perAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +55,13 @@
             this.PerTelNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kanGrupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet7 = new denemee.YurtSistemiDataSet7();
+            this.personelTableAdapter = new denemee.YurtSistemiDataSet7TableAdapters.PersonelTableAdapter();
+            this.tbxPerAra = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnPerAra = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet7)).BeginInit();
@@ -247,20 +251,6 @@
             this.dataGridView1.TabIndex = 26;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // personelBindingSource
-            // 
-            this.personelBindingSource.DataMember = "Personel";
-            this.personelBindingSource.DataSource = this.yurtSistemiDataSet7;
-            // 
-            // yurtSistemiDataSet7
-            // 
-            this.yurtSistemiDataSet7.DataSetName = "YurtSistemiDataSet7";
-            this.yurtSistemiDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // personelTableAdapter
-            // 
-            this.personelTableAdapter.ClearBeforeFill = true;
-            // 
             // perAdDataGridViewTextBoxColumn
             // 
             this.perAdDataGridViewTextBoxColumn.DataPropertyName = "PerAd";
@@ -318,12 +308,68 @@
             this.departmanDataGridViewTextBoxColumn.Name = "departmanDataGridViewTextBoxColumn";
             this.departmanDataGridViewTextBoxColumn.Width = 82;
             // 
+            // personelBindingSource
+            // 
+            this.personelBindingSource.DataMember = "Personel";
+            this.personelBindingSource.DataSource = this.yurtSistemiDataSet7;
+            // 
+            // yurtSistemiDataSet7
+            // 
+            this.yurtSistemiDataSet7.DataSetName = "YurtSistemiDataSet7";
+            this.yurtSistemiDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // personelTableAdapter
+            // 
+            this.personelTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbxPerAra
+            // 
+            this.tbxPerAra.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbxPerAra.Location = new System.Drawing.Point(703, 326);
+            this.tbxPerAra.Name = "tbxPerAra";
+            this.tbxPerAra.Size = new System.Drawing.Size(194, 25);
+            this.tbxPerAra.TabIndex = 28;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(660, 329);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(36, 17);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Ad :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(745, 304);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(93, 17);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Personel Ara";
+            // 
+            // btnPerAra
+            // 
+            this.btnPerAra.Location = new System.Drawing.Point(921, 317);
+            this.btnPerAra.Name = "btnPerAra";
+            this.btnPerAra.Size = new System.Drawing.Size(95, 33);
+            this.btnPerAra.TabIndex = 30;
+            this.btnPerAra.Text = "Ara";
+            this.btnPerAra.UseVisualStyleBackColor = true;
+            this.btnPerAra.Click += new System.EventHandler(this.btnPerAra_Click);
+            // 
             // FrmPersonel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1132, 392);
+            this.Controls.Add(this.btnPerAra);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.tbxPerAra);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -384,5 +430,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PerTelNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn kanGrupDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn departmanDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox tbxPerAra;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnPerAra;
     }
 }

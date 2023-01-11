@@ -21,7 +21,7 @@ namespace denemee
         {
             // TODO: This line of code loads data into the 'yurtSistemiDataSet14.Ogrenci' table. You can move, or remove it, as needed.
             this.ogrenciTableAdapter.Fill(this.yurtSistemiDataSet14.Ogrenci);
-
+            timer2.Start();
         }
 
         private void öğrenciEkleVeDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,6 +52,12 @@ namespace denemee
         {
             FrmOdeme odeme= new FrmOdeme();
             odeme.Show();   
+        }
+         
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            lblDateTimer.Text = DateTime.Now.ToLongDateString();
+            lblTimer.Text = DateTime.Now.ToLongTimeString();
         }
     }
 }

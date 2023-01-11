@@ -19,7 +19,8 @@ namespace denemee
             InitializeComponent();
         }
         SqlBaglantim bgl = new SqlBaglantim();
-
+        SqlDataAdapter adapt;
+        DataTable dt;
         private void FrmPersonel_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'yurtSistemiDataSet7.Personel' table. You can move, or remove it, as needed.
@@ -114,6 +115,15 @@ namespace denemee
             this.personelTableAdapter.Fill(this.yurtSistemiDataSet7.Personel);
         }
 
-     
+        private void btnPerAra_Click(object sender, EventArgs e)
+        {
+            adapt = new SqlDataAdapter("SELECT * FROM Personel WHERE PerAd Like '" + tbxPerAra.Text + "%'", bgl.baglanti());
+
+            dt = new DataTable();
+            adapt.Fill(dt);
+            dataGridView1.DataSource = dt;
+            bgl.baglanti().Close();
+
+        }
     }
 }

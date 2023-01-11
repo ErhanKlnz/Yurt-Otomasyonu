@@ -69,6 +69,12 @@
     <Compile Include="FrmAnasayfaPersonel.Designer.cs">
       <DependentUpon>FrmAnasayfaPersonel.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBackRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBackRestore.Designer.cs">
+      <DependentUpon>FrmBackRestore.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBolumler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAnasayfaPersonel.resx">
       <DependentUpon>FrmAnasayfaPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBackRestore.resx">
+      <DependentUpon>FrmBackRestore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>

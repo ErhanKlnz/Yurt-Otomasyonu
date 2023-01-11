@@ -16,7 +16,9 @@ namespace denemee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPersonel());
+            Application.Run(new Frmkullanici());
         }
     }
 }
+
+// Frmkullanici-->> ile başlar

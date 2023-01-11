@@ -125,6 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(513, 325);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pbxTC);
@@ -134,6 +135,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labe2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAdminGiris";
             this.Text = "Giriş";

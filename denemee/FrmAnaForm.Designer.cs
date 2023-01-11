@@ -286,8 +286,8 @@
             this.öğrenciAraToolStripMenuItem,
             this.kayıtSildirenÖğrencilerToolStripMenuItem});
             this.öğrenciToolStripMenuItem.Name = "öğrenciToolStripMenuItem";
-            this.öğrenciToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
-            this.öğrenciToolStripMenuItem.Text = "Öğrenci";
+            this.öğrenciToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.öğrenciToolStripMenuItem.Text = "Öğrenciler";
             // 
             // öğrenciEkleVeDüzenleToolStripMenuItem
             // 

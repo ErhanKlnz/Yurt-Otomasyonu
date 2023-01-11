@@ -29,13 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSilinmisOgr));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.silinmisOgrKayitlarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiiiDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiDataSet12 = new denemee.YurtSistemiDataSet12();
-            this.silinmisOgrKayitlarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.silinmisOgrKayitlarTableAdapter = new denemee.YurtSistemiDataSet12TableAdapters.SilinmisOgrKayitlarTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,11 +43,17 @@
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.silinmisOgrKayitlarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet12 = new denemee.YurtSistemiDataSet12();
+            this.label1 = new System.Windows.Forms.Label();
+            this.silinmisOgrKayitlarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiiiDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.silinmisOgrKayitlarTableAdapter = new denemee.YurtSistemiDataSet12TableAdapters.SilinmisOgrKayitlarTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.silinmisOgrKayitlarBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.silinmisOgrKayitlarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiiiDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.silinmisOgrKayitlarBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -74,40 +75,11 @@
             this.dataGridViewTextBoxColumn12});
             this.dataGridView1.DataSource = this.silinmisOgrKayitlarBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(1, 106);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(857, 441);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(16, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Kaydı Silinmiş Öğrenciler";
-            // 
-            // silinmisOgrKayitlarBindingSource
-            // 
-            this.silinmisOgrKayitlarBindingSource.DataMember = "SilinmisOgrKayitlar";
-            // 
-            // yurtSistemiDataSet12
-            // 
-            this.yurtSistemiDataSet12.DataSetName = "YurtSistemiDataSet12";
-            this.yurtSistemiDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // silinmisOgrKayitlarBindingSource1
-            // 
-            this.silinmisOgrKayitlarBindingSource1.DataMember = "SilinmisOgrKayitlar";
-            this.silinmisOgrKayitlarBindingSource1.DataSource = this.yurtSistemiDataSet12;
-            // 
-            // silinmisOgrKayitlarTableAdapter
-            // 
-            this.silinmisOgrKayitlarTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -205,6 +177,35 @@
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             this.dataGridViewTextBoxColumn12.Width = 67;
             // 
+            // silinmisOgrKayitlarBindingSource1
+            // 
+            this.silinmisOgrKayitlarBindingSource1.DataMember = "SilinmisOgrKayitlar";
+            this.silinmisOgrKayitlarBindingSource1.DataSource = this.yurtSistemiDataSet12;
+            // 
+            // yurtSistemiDataSet12
+            // 
+            this.yurtSistemiDataSet12.DataSetName = "YurtSistemiDataSet12";
+            this.yurtSistemiDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(16, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(329, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Kaydı Silinmiş Öğrenciler";
+            // 
+            // silinmisOgrKayitlarBindingSource
+            // 
+            this.silinmisOgrKayitlarBindingSource.DataMember = "SilinmisOgrKayitlar";
+            // 
+            // silinmisOgrKayitlarTableAdapter
+            // 
+            this.silinmisOgrKayitlarTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmSilinmisOgr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -213,15 +214,16 @@
             this.ClientSize = new System.Drawing.Size(856, 624);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmSilinmisOgr";
             this.Text = "Kaydı Silinmiş Öğrenciler";
             this.Load += new System.EventHandler(this.FrmSilinmisOgr_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.silinmisOgrKayitlarBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.silinmisOgrKayitlarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiiiDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.silinmisOgrKayitlarBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

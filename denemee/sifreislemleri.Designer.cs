@@ -43,17 +43,17 @@
             this.kullaniciAdiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sifreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kullaniciPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet13 = new denemee.YurtSistemiDataSet13();
             this.yoneticiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtSistemiDataSet6 = new denemee.YurtSistemiDataSet6();
             this.yoneticiTableAdapter = new denemee.YurtSistemiDataSet6TableAdapters.YoneticiTableAdapter();
-            this.yurtSistemiDataSet13 = new denemee.YurtSistemiDataSet13();
-            this.kullaniciPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kullaniciPersonelTableAdapter = new denemee.YurtSistemiDataSet13TableAdapters.KullaniciPersonelTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kullaniciPersonelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yoneticiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kullaniciPersonelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtsifre
@@ -185,6 +185,16 @@
             this.perTCDataGridViewTextBoxColumn.Name = "perTCDataGridViewTextBoxColumn";
             this.perTCDataGridViewTextBoxColumn.Width = 75;
             // 
+            // kullaniciPersonelBindingSource
+            // 
+            this.kullaniciPersonelBindingSource.DataMember = "KullaniciPersonel";
+            this.kullaniciPersonelBindingSource.DataSource = this.yurtSistemiDataSet13;
+            // 
+            // yurtSistemiDataSet13
+            // 
+            this.yurtSistemiDataSet13.DataSetName = "YurtSistemiDataSet13";
+            this.yurtSistemiDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // yoneticiBindingSource
             // 
             this.yoneticiBindingSource.DataMember = "Yonetici";
@@ -198,16 +208,6 @@
             // yoneticiTableAdapter
             // 
             this.yoneticiTableAdapter.ClearBeforeFill = true;
-            // 
-            // yurtSistemiDataSet13
-            // 
-            this.yurtSistemiDataSet13.DataSetName = "YurtSistemiDataSet13";
-            this.yurtSistemiDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kullaniciPersonelBindingSource
-            // 
-            this.kullaniciPersonelBindingSource.DataMember = "KullaniciPersonel";
-            this.kullaniciPersonelBindingSource.DataSource = this.yurtSistemiDataSet13;
             // 
             // kullaniciPersonelTableAdapter
             // 
@@ -236,10 +236,10 @@
             this.Text = "Kullanıcı İşlemleri";
             this.Load += new System.EventHandler(this.sifreislemleri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kullaniciPersonelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yoneticiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kullaniciPersonelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

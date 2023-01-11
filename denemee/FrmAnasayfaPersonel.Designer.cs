@@ -29,12 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnasayfaPersonel));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblTimer = new System.Windows.Forms.Label();
-            this.lblDateTimer = new System.Windows.Forms.Label();
-            this.yurtSistemiDataSet14 = new denemee.YurtSistemiDataSet14();
-            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ogrenciTableAdapter = new denemee.YurtSistemiDataSet14TableAdapters.OgrenciTableAdapter();
             this.ogrIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +38,11 @@
             this.dogTarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bolumIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.odaNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet14 = new denemee.YurtSistemiDataSet14();
+            this.lblTimer = new System.Windows.Forms.Label();
+            this.lblDateTimer = new System.Windows.Forms.Label();
+            this.ogrenciTableAdapter = new denemee.YurtSistemiDataSet14TableAdapters.OgrenciTableAdapter();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.öğrenciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.öğrenciEkleVeDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,9 +51,10 @@
             this.bölümlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bölümDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ödemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet14)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,40 +76,6 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(662, 261);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // lblTimer
-            // 
-            this.lblTimer.AutoSize = true;
-            this.lblTimer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTimer.Location = new System.Drawing.Point(525, 106);
-            this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(74, 26);
-            this.lblTimer.TabIndex = 6;
-            this.lblTimer.Text = "label2";
-            // 
-            // lblDateTimer
-            // 
-            this.lblDateTimer.AutoSize = true;
-            this.lblDateTimer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDateTimer.Location = new System.Drawing.Point(493, 80);
-            this.lblDateTimer.Name = "lblDateTimer";
-            this.lblDateTimer.Size = new System.Drawing.Size(74, 26);
-            this.lblDateTimer.TabIndex = 5;
-            this.lblDateTimer.Text = "label1";
-            // 
-            // yurtSistemiDataSet14
-            // 
-            this.yurtSistemiDataSet14.DataSetName = "YurtSistemiDataSet14";
-            this.yurtSistemiDataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrenciBindingSource
-            // 
-            this.ogrenciBindingSource.DataMember = "Ogrenci";
-            this.ogrenciBindingSource.DataSource = this.yurtSistemiDataSet14;
-            // 
-            // ogrenciTableAdapter
-            // 
-            this.ogrenciTableAdapter.ClearBeforeFill = true;
             // 
             // ogrIdDataGridViewTextBoxColumn
             // 
@@ -166,6 +134,42 @@
             this.odaNoDataGridViewTextBoxColumn.Name = "odaNoDataGridViewTextBoxColumn";
             this.odaNoDataGridViewTextBoxColumn.Width = 125;
             // 
+            // ogrenciBindingSource
+            // 
+            this.ogrenciBindingSource.DataMember = "Ogrenci";
+            this.ogrenciBindingSource.DataSource = this.yurtSistemiDataSet14;
+            // 
+            // yurtSistemiDataSet14
+            // 
+            this.yurtSistemiDataSet14.DataSetName = "YurtSistemiDataSet14";
+            this.yurtSistemiDataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lblTimer
+            // 
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTimer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTimer.Location = new System.Drawing.Point(448, 103);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(74, 26);
+            this.lblTimer.TabIndex = 6;
+            this.lblTimer.Text = "label2";
+            // 
+            // lblDateTimer
+            // 
+            this.lblDateTimer.AutoSize = true;
+            this.lblDateTimer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDateTimer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDateTimer.Location = new System.Drawing.Point(416, 77);
+            this.lblDateTimer.Name = "lblDateTimer";
+            this.lblDateTimer.Size = new System.Drawing.Size(74, 26);
+            this.lblDateTimer.TabIndex = 5;
+            this.lblDateTimer.Text = "label1";
+            // 
+            // ogrenciTableAdapter
+            // 
+            this.ogrenciTableAdapter.ClearBeforeFill = true;
+            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -186,8 +190,8 @@
             this.öğrenciAraToolStripMenuItem,
             this.kayıtSildirenÖğrencilerToolStripMenuItem});
             this.öğrenciToolStripMenuItem.Name = "öğrenciToolStripMenuItem";
-            this.öğrenciToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
-            this.öğrenciToolStripMenuItem.Text = "Öğrenci";
+            this.öğrenciToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.öğrenciToolStripMenuItem.Text = "Öğrenciler";
             // 
             // öğrenciEkleVeDüzenleToolStripMenuItem
             // 
@@ -221,7 +225,7 @@
             // bölümDüzenleToolStripMenuItem
             // 
             this.bölümDüzenleToolStripMenuItem.Name = "bölümDüzenleToolStripMenuItem";
-            this.bölümDüzenleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.bölümDüzenleToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
             this.bölümDüzenleToolStripMenuItem.Text = "Bölüm Düzenle";
             this.bölümDüzenleToolStripMenuItem.Click += new System.EventHandler(this.bölümDüzenleToolStripMenuItem_Click);
             // 
@@ -232,21 +236,28 @@
             this.ödemeToolStripMenuItem.Text = "Ödeme";
             this.ödemeToolStripMenuItem.Click += new System.EventHandler(this.ödemeToolStripMenuItem_Click);
             // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // FrmAnasayfaPersonel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(703, 447);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.lblDateTimer);
+            this.ForeColor = System.Drawing.Color.AliceBlue;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAnasayfaPersonel";
-            this.Text = "FrmAnasayfaPersonel";
+            this.Text = "Ana Sayfa";
             this.Load += new System.EventHandler(this.FrmAnasayfaPersonel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet14)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -277,5 +288,6 @@
         private System.Windows.Forms.ToolStripMenuItem bölümlerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bölümDüzenleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ödemeToolStripMenuItem;
+        private System.Windows.Forms.Timer timer2;
     }
 }
