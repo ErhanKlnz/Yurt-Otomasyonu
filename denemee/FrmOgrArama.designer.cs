@@ -194,7 +194,7 @@
             this.pbxBolum.Margin = new System.Windows.Forms.Padding(4);
             this.pbxBolum.Name = "pbxBolum";
             this.pbxBolum.Size = new System.Drawing.Size(46, 39);
-            this.pbxBolum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxBolum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxBolum.TabIndex = 15;
             this.pbxBolum.TabStop = false;
             this.pbxBolum.Click += new System.EventHandler(this.pbxBolum_Click);
@@ -206,7 +206,7 @@
             this.pbxAd.Margin = new System.Windows.Forms.Padding(4);
             this.pbxAd.Name = "pbxAd";
             this.pbxAd.Size = new System.Drawing.Size(46, 39);
-            this.pbxAd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxAd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxAd.TabIndex = 16;
             this.pbxAd.TabStop = false;
             this.pbxAd.Click += new System.EventHandler(this.pbxAd_Click);
@@ -218,7 +218,7 @@
             this.pbxSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.pbxSoyad.Name = "pbxSoyad";
             this.pbxSoyad.Size = new System.Drawing.Size(46, 39);
-            this.pbxSoyad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxSoyad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxSoyad.TabIndex = 17;
             this.pbxSoyad.TabStop = false;
             this.pbxSoyad.Click += new System.EventHandler(this.pbxSoyad_Click);
@@ -260,6 +260,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1200, 589);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);

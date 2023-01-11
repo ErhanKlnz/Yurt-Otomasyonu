@@ -58,20 +58,6 @@
             this.btnDuzenle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.dgwOgrIslem = new System.Windows.Forms.DataGridView();
-            this.ogrenciBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiDataSet8 = new denemee.YurtSistemiDataSet8();
-            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiDataSet3 = new denemee.YurtSistemiDataSet3();
-            this.ogrenciTableAdapter = new denemee.YurtSistemiDataSet3TableAdapters.OgrenciTableAdapter();
-            this.ogrenciTableAdapter1 = new denemee.YurtSistemiDataSet8TableAdapters.OgrenciTableAdapter();
-            this.ogrenciBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiDataSet9 = new denemee.YurtSistemiDataSet9();
-            this.ogrenciTableAdapter2 = new denemee.YurtSistemiDataSet9TableAdapters.OgrenciTableAdapter();
-            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
-            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.ogrenciBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiDataSet11 = new denemee.YurtSistemiDataSet11();
-            this.ogrenciTableAdapter3 = new denemee.YurtSistemiDataSet11TableAdapters.OgrenciTableAdapter();
             this.OgrId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,7 +71,23 @@
             this.VeliAdSoyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VeliTelNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OgrAdres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrenciBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet11 = new denemee.YurtSistemiDataSet11();
+            this.ogrenciBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet8 = new denemee.YurtSistemiDataSet8();
+            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet3 = new denemee.YurtSistemiDataSet3();
+            this.ogrenciTableAdapter = new denemee.YurtSistemiDataSet3TableAdapters.OgrenciTableAdapter();
+            this.ogrenciTableAdapter1 = new denemee.YurtSistemiDataSet8TableAdapters.OgrenciTableAdapter();
+            this.ogrenciBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet9 = new denemee.YurtSistemiDataSet9();
+            this.ogrenciTableAdapter2 = new denemee.YurtSistemiDataSet9TableAdapters.OgrenciTableAdapter();
+            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
+            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.ogrenciTableAdapter3 = new denemee.YurtSistemiDataSet11TableAdapters.OgrenciTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgwOgrIslem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).BeginInit();
@@ -93,8 +95,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet9)).BeginInit();
             this.fillByToolStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // lblOgrAd
@@ -348,7 +348,7 @@
             // btnOgrEkle
             // 
             this.btnOgrEkle.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOgrEkle.Location = new System.Drawing.Point(978, 272);
+            this.btnOgrEkle.Location = new System.Drawing.Point(1127, 512);
             this.btnOgrEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnOgrEkle.Name = "btnOgrEkle";
             this.btnOgrEkle.Size = new System.Drawing.Size(152, 40);
@@ -360,7 +360,7 @@
             // btnDuzenle
             // 
             this.btnDuzenle.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDuzenle.Location = new System.Drawing.Point(978, 338);
+            this.btnDuzenle.Location = new System.Drawing.Point(1127, 578);
             this.btnDuzenle.Margin = new System.Windows.Forms.Padding(4);
             this.btnDuzenle.Name = "btnDuzenle";
             this.btnDuzenle.Size = new System.Drawing.Size(152, 40);
@@ -372,7 +372,7 @@
             // btnSil
             // 
             this.btnSil.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSil.Location = new System.Drawing.Point(978, 398);
+            this.btnSil.Location = new System.Drawing.Point(1127, 638);
             this.btnSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(152, 40);
@@ -404,84 +404,9 @@
             this.dgwOgrIslem.Margin = new System.Windows.Forms.Padding(4);
             this.dgwOgrIslem.Name = "dgwOgrIslem";
             this.dgwOgrIslem.RowHeadersWidth = 51;
-            this.dgwOgrIslem.Size = new System.Drawing.Size(961, 424);
+            this.dgwOgrIslem.Size = new System.Drawing.Size(1339, 443);
             this.dgwOgrIslem.TabIndex = 27;
             this.dgwOgrIslem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwOgrIslem_CellClick_1);
-            // 
-            // ogrenciBindingSource1
-            // 
-            this.ogrenciBindingSource1.DataMember = "Ogrenci";
-            this.ogrenciBindingSource1.DataSource = this.yurtSistemiDataSet8;
-            // 
-            // yurtSistemiDataSet8
-            // 
-            this.yurtSistemiDataSet8.DataSetName = "YurtSistemiDataSet8";
-            this.yurtSistemiDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrenciBindingSource
-            // 
-            this.ogrenciBindingSource.DataMember = "Ogrenci";
-            this.ogrenciBindingSource.DataSource = this.yurtSistemiDataSet3;
-            // 
-            // yurtSistemiDataSet3
-            // 
-            this.yurtSistemiDataSet3.DataSetName = "YurtSistemiDataSet3";
-            this.yurtSistemiDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrenciTableAdapter
-            // 
-            this.ogrenciTableAdapter.ClearBeforeFill = true;
-            // 
-            // ogrenciTableAdapter1
-            // 
-            this.ogrenciTableAdapter1.ClearBeforeFill = true;
-            // 
-            // ogrenciBindingSource2
-            // 
-            this.ogrenciBindingSource2.DataMember = "Ogrenci";
-            this.ogrenciBindingSource2.DataSource = this.yurtSistemiDataSet9;
-            // 
-            // yurtSistemiDataSet9
-            // 
-            this.yurtSistemiDataSet9.DataSetName = "YurtSistemiDataSet9";
-            this.yurtSistemiDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrenciTableAdapter2
-            // 
-            this.ogrenciTableAdapter2.ClearBeforeFill = true;
-            // 
-            // fillByToolStrip
-            // 
-            this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillByToolStripButton});
-            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(1167, 27);
-            this.fillByToolStrip.TabIndex = 28;
-            this.fillByToolStrip.Text = "fillByToolStrip";
-            // 
-            // fillByToolStripButton
-            // 
-            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillByToolStripButton.Name = "fillByToolStripButton";
-            this.fillByToolStripButton.Size = new System.Drawing.Size(48, 24);
-            this.fillByToolStripButton.Text = "FillBy";
-            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
-            // 
-            // ogrenciBindingSource3
-            // 
-            this.ogrenciBindingSource3.DataMember = "Ogrenci";
-            this.ogrenciBindingSource3.DataSource = this.yurtSistemiDataSet11;
-            // 
-            // yurtSistemiDataSet11
-            // 
-            this.yurtSistemiDataSet11.DataSetName = "YurtSistemiDataSet11";
-            this.yurtSistemiDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrenciTableAdapter3
-            // 
-            this.ogrenciTableAdapter3.ClearBeforeFill = true;
             // 
             // OgrId
             // 
@@ -588,11 +513,87 @@
             this.OgrAdres.Name = "OgrAdres";
             this.OgrAdres.Width = 125;
             // 
+            // ogrenciBindingSource3
+            // 
+            this.ogrenciBindingSource3.DataMember = "Ogrenci";
+            this.ogrenciBindingSource3.DataSource = this.yurtSistemiDataSet11;
+            // 
+            // yurtSistemiDataSet11
+            // 
+            this.yurtSistemiDataSet11.DataSetName = "YurtSistemiDataSet11";
+            this.yurtSistemiDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciBindingSource1
+            // 
+            this.ogrenciBindingSource1.DataMember = "Ogrenci";
+            this.ogrenciBindingSource1.DataSource = this.yurtSistemiDataSet8;
+            // 
+            // yurtSistemiDataSet8
+            // 
+            this.yurtSistemiDataSet8.DataSetName = "YurtSistemiDataSet8";
+            this.yurtSistemiDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciBindingSource
+            // 
+            this.ogrenciBindingSource.DataMember = "Ogrenci";
+            this.ogrenciBindingSource.DataSource = this.yurtSistemiDataSet3;
+            // 
+            // yurtSistemiDataSet3
+            // 
+            this.yurtSistemiDataSet3.DataSetName = "YurtSistemiDataSet3";
+            this.yurtSistemiDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciTableAdapter
+            // 
+            this.ogrenciTableAdapter.ClearBeforeFill = true;
+            // 
+            // ogrenciTableAdapter1
+            // 
+            this.ogrenciTableAdapter1.ClearBeforeFill = true;
+            // 
+            // ogrenciBindingSource2
+            // 
+            this.ogrenciBindingSource2.DataMember = "Ogrenci";
+            this.ogrenciBindingSource2.DataSource = this.yurtSistemiDataSet9;
+            // 
+            // yurtSistemiDataSet9
+            // 
+            this.yurtSistemiDataSet9.DataSetName = "YurtSistemiDataSet9";
+            this.yurtSistemiDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciTableAdapter2
+            // 
+            this.ogrenciTableAdapter2.ClearBeforeFill = true;
+            // 
+            // fillByToolStrip
+            // 
+            this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fillByToolStripButton});
+            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.fillByToolStrip.Name = "fillByToolStrip";
+            this.fillByToolStrip.Size = new System.Drawing.Size(1392, 27);
+            this.fillByToolStrip.TabIndex = 28;
+            this.fillByToolStrip.Text = "fillByToolStrip";
+            // 
+            // fillByToolStripButton
+            // 
+            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton.Name = "fillByToolStripButton";
+            this.fillByToolStripButton.Size = new System.Drawing.Size(48, 24);
+            this.fillByToolStripButton.Text = "FillBy";
+            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
+            // 
+            // ogrenciTableAdapter3
+            // 
+            this.ogrenciTableAdapter3.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 720);
+            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.ClientSize = new System.Drawing.Size(1392, 726);
             this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.dgwOgrIslem);
             this.Controls.Add(this.btnSil);
@@ -628,6 +629,8 @@
             this.Text = "Öğrenci Düzenle";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwOgrIslem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).EndInit();
@@ -636,8 +639,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet9)).EndInit();
             this.fillByToolStrip.ResumeLayout(false);
             this.fillByToolStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

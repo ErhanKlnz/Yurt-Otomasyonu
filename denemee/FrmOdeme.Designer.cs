@@ -176,6 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(611, 486);
             this.Controls.Add(this.btnOdemeAl);
             this.Controls.Add(this.txtOgrAdOdeme);
