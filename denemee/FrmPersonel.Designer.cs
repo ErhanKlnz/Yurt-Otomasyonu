@@ -58,9 +58,22 @@
             this.personelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtSistemiDataSet7 = new denemee.YurtSistemiDataSet7();
             this.personelTableAdapter = new denemee.YurtSistemiDataSet7TableAdapters.PersonelTableAdapter();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.öğrencilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.öğrenciKayıdıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.öğrenciListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ödemelerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ödemeAlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yöneticiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.şifreİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bölümlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bölümEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet7)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtPerSoyad
@@ -318,12 +331,111 @@
             // 
             this.personelTableAdapter.ClearBeforeFill = true;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.öğrencilerToolStripMenuItem,
+            this.ödemelerToolStripMenuItem,
+            this.istatistiklerToolStripMenuItem,
+            this.yöneticiToolStripMenuItem,
+            this.bölümlerToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1132, 28);
+            this.menuStrip1.TabIndex = 27;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // öğrencilerToolStripMenuItem
+            // 
+            this.öğrencilerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.öğrenciKayıdıToolStripMenuItem,
+            this.öğrenciListesiToolStripMenuItem});
+            this.öğrencilerToolStripMenuItem.Name = "öğrencilerToolStripMenuItem";
+            this.öğrencilerToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
+            this.öğrencilerToolStripMenuItem.Text = "Öğrenciler";
+            // 
+            // öğrenciKayıdıToolStripMenuItem
+            // 
+            this.öğrenciKayıdıToolStripMenuItem.Name = "öğrenciKayıdıToolStripMenuItem";
+            this.öğrenciKayıdıToolStripMenuItem.Size = new System.Drawing.Size(279, 26);
+            this.öğrenciKayıdıToolStripMenuItem.Text = "Öğrenci Kayıt ve Düzenleme";
+            this.öğrenciKayıdıToolStripMenuItem.Click += new System.EventHandler(this.öğrenciKayıdıToolStripMenuItem_Click);
+            // 
+            // öğrenciListesiToolStripMenuItem
+            // 
+            this.öğrenciListesiToolStripMenuItem.Name = "öğrenciListesiToolStripMenuItem";
+            this.öğrenciListesiToolStripMenuItem.Size = new System.Drawing.Size(279, 26);
+            this.öğrenciListesiToolStripMenuItem.Text = "Öğrenci Listesi";
+            // 
+            // ödemelerToolStripMenuItem
+            // 
+            this.ödemelerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ödemeAlToolStripMenuItem});
+            this.ödemelerToolStripMenuItem.Name = "ödemelerToolStripMenuItem";
+            this.ödemelerToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.ödemelerToolStripMenuItem.Text = "Ödemeler";
+            // 
+            // ödemeAlToolStripMenuItem
+            // 
+            this.ödemeAlToolStripMenuItem.Name = "ödemeAlToolStripMenuItem";
+            this.ödemeAlToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ödemeAlToolStripMenuItem.Text = "Ödeme Al";
+            this.ödemeAlToolStripMenuItem.Click += new System.EventHandler(this.ödemeAlToolStripMenuItem_Click);
+            // 
+            // istatistiklerToolStripMenuItem
+            // 
+            this.istatistiklerToolStripMenuItem.Name = "istatistiklerToolStripMenuItem";
+            this.istatistiklerToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
+            this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
+            // 
+            // yöneticiToolStripMenuItem
+            // 
+            this.yöneticiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.şifreİşlemleriToolStripMenuItem,
+            this.personelDüzenleToolStripMenuItem});
+            this.yöneticiToolStripMenuItem.Name = "yöneticiToolStripMenuItem";
+            this.yöneticiToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.yöneticiToolStripMenuItem.Text = "Yönetici";
+            // 
+            // şifreİşlemleriToolStripMenuItem
+            // 
+            this.şifreİşlemleriToolStripMenuItem.Name = "şifreİşlemleriToolStripMenuItem";
+            this.şifreİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.şifreİşlemleriToolStripMenuItem.Text = "Şifre İşlemleri";
+            this.şifreİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.şifreİşlemleriToolStripMenuItem_Click);
+            // 
+            // personelDüzenleToolStripMenuItem
+            // 
+            this.personelDüzenleToolStripMenuItem.Name = "personelDüzenleToolStripMenuItem";
+            this.personelDüzenleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.personelDüzenleToolStripMenuItem.Text = "Personel Düzenle";
+            this.personelDüzenleToolStripMenuItem.Click += new System.EventHandler(this.personelDüzenleToolStripMenuItem_Click);
+            // 
+            // bölümlerToolStripMenuItem
+            // 
+            this.bölümlerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bölümEkleToolStripMenuItem});
+            this.bölümlerToolStripMenuItem.Name = "bölümlerToolStripMenuItem";
+            this.bölümlerToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.bölümlerToolStripMenuItem.Text = "Bölümler";
+            // 
+            // bölümEkleToolStripMenuItem
+            // 
+            this.bölümEkleToolStripMenuItem.Name = "bölümEkleToolStripMenuItem";
+            this.bölümEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.bölümEkleToolStripMenuItem.Text = "Bölümleri Düzenle";
+            this.bölümEkleToolStripMenuItem.Click += new System.EventHandler(this.bölümEkleToolStripMenuItem_Click);
+            // 
             // FrmPersonel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1132, 392);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -349,6 +461,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet7)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,5 +498,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cinsiyetDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kanGrupDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn departmanDataGridViewTextBoxColumn;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem öğrencilerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem öğrenciKayıdıToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem öğrenciListesiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ödemelerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ödemeAlToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem istatistiklerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yöneticiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem şifreİşlemleriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelDüzenleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bölümlerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bölümEkleToolStripMenuItem;
     }
 }

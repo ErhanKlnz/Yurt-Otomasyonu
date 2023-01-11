@@ -102,6 +102,37 @@ namespace denemee
             dgwOgrArama.DataSource = dt;
             bgl.baglanti().Close();
         }
+
+        private void öğrenciKayıdıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+        }
+
+        private void ödemeAlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOdeme ode= new FrmOdeme();
+            ode.Show();
+                    
+        }
+
+        private void şifreİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sifreislemleri sifre = new sifreislemleri(); 
+            sifre.Show();
+        }
+
+        private void personelDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPersonel per =   new FrmPersonel();
+            per.Show();
+        }
+
+        private void bölümEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBolumler bol = new FrmBolumler();
+            bol.Show();
+        }
     }
 }
 
