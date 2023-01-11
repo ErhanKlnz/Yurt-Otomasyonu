@@ -48,3 +48,6 @@ C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.sifreislemleri.res
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmOdeme.resources
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmOgrArama.resources
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmSilinmisOgr.resources
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.Frmkullanici.resources
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmPersonelGiriş.resources
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmAnasayfaPersonel.resources

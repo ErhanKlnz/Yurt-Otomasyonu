@@ -32,30 +32,47 @@ namespace denemee
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("insert into Personel(PerAd,PerSoyad,PerTC,Cinsiyet,PerTelNo,KanGrup,Departman) values (@a1,@a2,@a3,@a4,@a5,@a6,@a7)", bgl.baglanti());
-            komut.Parameters.AddWithValue("@a1", txtPerAd.Text);
-            komut.Parameters.AddWithValue("@a2", txtPerSoyad.Text);
-            komut.Parameters.AddWithValue("@a3", mtxtPerTC.Text);
-            komut.Parameters.AddWithValue("@a4", txtPercins.Text);
-            komut.Parameters.AddWithValue("@a5", mtxtPerTel.Text);
-            komut.Parameters.AddWithValue("@a6", txtPerkan.Text);
-            komut.Parameters.AddWithValue("@a7", txtPerDep.Text);
-            komut.ExecuteNonQuery();
-            bgl.baglanti().Close();
-            MessageBox.Show("Personel Eklendi");
-            this.personelTableAdapter.Fill(this.yurtSistemiDataSet7.Personel);
+            try
+            {
+                SqlCommand komut = new SqlCommand("insert into Personel(PerAd,PerSoyad,PerTC,Cinsiyet,PerTelNo,KanGrup,Departman) values (@a1,@a2,@a3,@a4,@a5,@a6,@a7)", bgl.baglanti());
+                komut.Parameters.AddWithValue("@a1", txtPerAd.Text);
+                komut.Parameters.AddWithValue("@a2", txtPerSoyad.Text);
+                komut.Parameters.AddWithValue("@a3", mtxtPerTC.Text);
+                komut.Parameters.AddWithValue("@a4", txtPercins.Text);
+                komut.Parameters.AddWithValue("@a5", mtxtPerTel.Text);
+                komut.Parameters.AddWithValue("@a6", txtPerkan.Text);
+                komut.Parameters.AddWithValue("@a7", txtPerDep.Text);
+                komut.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Personel Eklendi");
+                this.personelTableAdapter.Fill(this.yurtSistemiDataSet7.Personel);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Yeniden Dene");
+            }
+            
 
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("delete from Personel where PerTC=@a1",bgl.baglanti());
-            komut.Parameters.AddWithValue("@a1", mtxtPerTC.Text);
-            komut.ExecuteNonQuery();
-            bgl.baglanti().Close();
-            MessageBox.Show("Personel Kaydı Silindi");
-            this.personelTableAdapter.Fill(this.yurtSistemiDataSet7.Personel);
+            try
+            {
+                SqlCommand komut = new SqlCommand("delete from Personel where PerTC=@a1", bgl.baglanti());
+                komut.Parameters.AddWithValue("@a1", mtxtPerTC.Text);
+                komut.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Personel Kaydı Silindi");
+                this.personelTableAdapter.Fill(this.yurtSistemiDataSet7.Personel);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Bu TC başka bir kullanıcı personele bağlı yada aynı TC den iki personel olamaz !!");
+            } 
         }
         int secilen;
 

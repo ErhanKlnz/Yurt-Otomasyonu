@@ -46,15 +46,20 @@
             this.yoneticiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtSistemiDataSet6 = new denemee.YurtSistemiDataSet6();
             this.yoneticiTableAdapter = new denemee.YurtSistemiDataSet6TableAdapters.YoneticiTableAdapter();
+            this.yurtSistemiDataSet13 = new denemee.YurtSistemiDataSet13();
+            this.kullaniciPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kullaniciPersonelTableAdapter = new denemee.YurtSistemiDataSet13TableAdapters.KullaniciPersonelTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yoneticiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kullaniciPersonelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtsifre
             // 
             this.txtsifre.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtsifre.Location = new System.Drawing.Point(195, 141);
+            this.txtsifre.Location = new System.Drawing.Point(155, 144);
             this.txtsifre.Name = "txtsifre";
             this.txtsifre.Size = new System.Drawing.Size(194, 25);
             this.txtsifre.TabIndex = 8;
@@ -63,7 +68,7 @@
             // txtkullanıcıadi
             // 
             this.txtkullanıcıadi.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtkullanıcıadi.Location = new System.Drawing.Point(195, 100);
+            this.txtkullanıcıadi.Location = new System.Drawing.Point(155, 103);
             this.txtkullanıcıadi.Name = "txtkullanıcıadi";
             this.txtkullanıcıadi.Size = new System.Drawing.Size(194, 25);
             this.txtkullanıcıadi.TabIndex = 7;
@@ -72,7 +77,7 @@
             // 
             this.labe2.AutoSize = true;
             this.labe2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labe2.Location = new System.Drawing.Point(133, 144);
+            this.labe2.Location = new System.Drawing.Point(93, 147);
             this.labe2.Name = "labe2";
             this.labe2.Size = new System.Drawing.Size(47, 17);
             this.labe2.TabIndex = 6;
@@ -82,7 +87,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(83, 103);
+            this.label1.Location = new System.Drawing.Point(43, 106);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 17);
             this.label1.TabIndex = 5;
@@ -92,16 +97,16 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(83, 74);
+            this.label3.Location = new System.Drawing.Point(43, 77);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 17);
+            this.label3.Size = new System.Drawing.Size(100, 17);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Yönetici TC :";
+            this.label3.Text = "Personel TC :";
             // 
             // cmbyöneticiTC
             // 
             this.cmbyöneticiTC.FormattingEnabled = true;
-            this.cmbyöneticiTC.Location = new System.Drawing.Point(195, 70);
+            this.cmbyöneticiTC.Location = new System.Drawing.Point(155, 73);
             this.cmbyöneticiTC.Name = "cmbyöneticiTC";
             this.cmbyöneticiTC.Size = new System.Drawing.Size(194, 24);
             this.cmbyöneticiTC.TabIndex = 12;
@@ -144,7 +149,7 @@
             this.kullaniciAdiDataGridViewTextBoxColumn,
             this.sifreDataGridViewTextBoxColumn,
             this.perTCDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.yoneticiBindingSource;
+            this.dataGridView1.DataSource = this.kullaniciPersonelBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(34, 280);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -194,6 +199,20 @@
             // 
             this.yoneticiTableAdapter.ClearBeforeFill = true;
             // 
+            // yurtSistemiDataSet13
+            // 
+            this.yurtSistemiDataSet13.DataSetName = "YurtSistemiDataSet13";
+            this.yurtSistemiDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kullaniciPersonelBindingSource
+            // 
+            this.kullaniciPersonelBindingSource.DataMember = "KullaniciPersonel";
+            this.kullaniciPersonelBindingSource.DataSource = this.yurtSistemiDataSet13;
+            // 
+            // kullaniciPersonelTableAdapter
+            // 
+            this.kullaniciPersonelTableAdapter.ClearBeforeFill = true;
+            // 
             // sifreislemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -219,6 +238,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yoneticiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kullaniciPersonelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +263,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn kullaniciAdiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sifreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn perTCDataGridViewTextBoxColumn;
+        private YurtSistemiDataSet13 yurtSistemiDataSet13;
+        private System.Windows.Forms.BindingSource kullaniciPersonelBindingSource;
+        private YurtSistemiDataSet13TableAdapters.KullaniciPersonelTableAdapter kullaniciPersonelTableAdapter;
     }
 }

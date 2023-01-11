@@ -20,6 +20,8 @@ namespace denemee
         SqlBaglantim bgl = new SqlBaglantim();
         private void sifreislemleri_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'yurtSistemiDataSet13.KullaniciPersonel' table. You can move, or remove it, as needed.
+            this.kullaniciPersonelTableAdapter.Fill(this.yurtSistemiDataSet13.KullaniciPersonel);
             // TODO: This line of code loads data into the 'yurtSistemiDataSet6.Yonetici' table. You can move, or remove it, as needed.
             this.yoneticiTableAdapter.Fill(this.yurtSistemiDataSet6.Yonetici);
             SqlCommand komut = new SqlCommand("Select PerTc From Personel", bgl.baglanti());
@@ -34,13 +36,13 @@ namespace denemee
 
         private void btnkaydet_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("insert into Yonetici(KullaniciAdi,Sifre,PerTC) values (@a1,@a2,@a3)", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("insert into KullaniciPersonel (KullaniciAdi,Sifre,PerTC) values (@a1,@a2,@a3)", bgl.baglanti());
             komut.Parameters.AddWithValue("@a1", txtkullanıcıadi.Text);
             komut.Parameters.AddWithValue("@a2", txtsifre.Text);
             komut.Parameters.AddWithValue("@a3",cmbyöneticiTC.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
-            MessageBox.Show("Yönetici Eklendi");
+            MessageBox.Show("Kullanıcı Personel Eklendi");
             this.yoneticiTableAdapter.Fill(this.yurtSistemiDataSet6.Yonetici);
 
         }
@@ -62,7 +64,7 @@ namespace denemee
 
         private void btnsil_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("delete from Yonetici where PerTC=@a1", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("delete from KullaniciPersonel where PerTC=@a1", bgl.baglanti());
             komut.Parameters.AddWithValue("@a1", cmbyöneticiTC.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
@@ -72,7 +74,7 @@ namespace denemee
 
         private void btngüncelle_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("update  Yonetici set KullaniciAdi=@a1, Sifre=@a2 where PerTC=@a3", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("update  KullaniciPersonel set KullaniciAdi=@a1, Sifre=@a2 where PerTC=@a3", bgl.baglanti());
             komut.Parameters.AddWithValue("@a1", txtkullanıcıadi.Text);
             komut.Parameters.AddWithValue("@a2", txtsifre.Text);
             komut.Parameters.AddWithValue("@a3", cmbyöneticiTC.Text);

@@ -37,34 +37,45 @@ namespace denemee
 
         }
 
-        private void öğrenciKayıdıToolStripMenuItem_Click(object sender, EventArgs e)
+        private void öğrenciEkleVeDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 fr = new Form1();
-            fr.Show();
+            Form1 form = new Form1();
+            form.Show();
         }
 
-        private void şifreİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            sifreislemleri sr= new sifreislemleri();
-            sr.Show();
-        }
-
-        private void personelDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmPersonel personel= new FrmPersonel();
-            personel.Show();
-        }
-
-        private void bölümEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        private void bölümDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmBolumler bol = new FrmBolumler();
             bol.Show();
         }
 
-        private void ödemeAlToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ödemeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmOdeme odeme = new FrmOdeme();
-            odeme.Show();
+            FrmOdeme ode = new FrmOdeme();
+            ode.Show();
+        }
+        private void personelEkleVeDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPersonel per = new FrmPersonel();
+            per.Show();
+        }
+
+        private void kullanıcıAyarlarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sifreislemleri sifre = new sifreislemleri();
+            sifre.Show();
+        }
+
+        private void öğrenciAraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOgrArama ara = new FrmOgrArama();
+            ara.Show();
+        }
+
+        private void kayıtSildirenÖğrencilerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSilinmisOgr silin= new FrmSilinmisOgr();
+            silin.Show();
         }
     }
 }

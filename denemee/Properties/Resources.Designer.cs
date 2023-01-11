@@ -63,6 +63,26 @@ namespace denemee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Admin_Profile_PNG {
+            get {
+                object obj = ResourceManager.GetObject("Admin-Profile-PNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Admin_Profile_PNG_Pic {
+            get {
+                object obj = ResourceManager.GetObject("Admin-Profile-PNG-Pic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cikar {
             get {
                 object obj = ResourceManager.GetObject("cikar", resourceCulture);
@@ -96,6 +116,16 @@ namespace denemee.Properties {
         internal static System.Drawing.Bitmap icons8_search_client_90 {
             get {
                 object obj = ResourceManager.GetObject("icons8-search-client-90", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Iconsmind_Outline_Students {
+            get {
+                object obj = ResourceManager.GetObject("Iconsmind-Outline-Students", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
