@@ -48,6 +48,7 @@
             this.öğrenciEkleVeDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.öğrenciAraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kayıtSildirenÖğrencilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.girişÇıkışKayıtlarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bölümlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bölümDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ödemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -188,7 +189,8 @@
             this.öğrenciToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.öğrenciEkleVeDüzenleToolStripMenuItem,
             this.öğrenciAraToolStripMenuItem,
-            this.kayıtSildirenÖğrencilerToolStripMenuItem});
+            this.kayıtSildirenÖğrencilerToolStripMenuItem,
+            this.girişÇıkışKayıtlarıToolStripMenuItem});
             this.öğrenciToolStripMenuItem.Name = "öğrenciToolStripMenuItem";
             this.öğrenciToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
             this.öğrenciToolStripMenuItem.Text = "Öğrenciler";
@@ -196,23 +198,30 @@
             // öğrenciEkleVeDüzenleToolStripMenuItem
             // 
             this.öğrenciEkleVeDüzenleToolStripMenuItem.Name = "öğrenciEkleVeDüzenleToolStripMenuItem";
-            this.öğrenciEkleVeDüzenleToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
+            this.öğrenciEkleVeDüzenleToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
             this.öğrenciEkleVeDüzenleToolStripMenuItem.Text = "Öğrenci Ekle ve Düzenle";
             this.öğrenciEkleVeDüzenleToolStripMenuItem.Click += new System.EventHandler(this.öğrenciEkleVeDüzenleToolStripMenuItem_Click);
             // 
             // öğrenciAraToolStripMenuItem
             // 
             this.öğrenciAraToolStripMenuItem.Name = "öğrenciAraToolStripMenuItem";
-            this.öğrenciAraToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
+            this.öğrenciAraToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
             this.öğrenciAraToolStripMenuItem.Text = "Öğrenci Ara";
             this.öğrenciAraToolStripMenuItem.Click += new System.EventHandler(this.öğrenciAraToolStripMenuItem_Click);
             // 
             // kayıtSildirenÖğrencilerToolStripMenuItem
             // 
             this.kayıtSildirenÖğrencilerToolStripMenuItem.Name = "kayıtSildirenÖğrencilerToolStripMenuItem";
-            this.kayıtSildirenÖğrencilerToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
-            this.kayıtSildirenÖğrencilerToolStripMenuItem.Text = "Kayıt Sildiren Öğrenciler";
+            this.kayıtSildirenÖğrencilerToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.kayıtSildirenÖğrencilerToolStripMenuItem.Text = "Kaydı Silinmiş Öğrenciler";
             this.kayıtSildirenÖğrencilerToolStripMenuItem.Click += new System.EventHandler(this.kayıtSildirenÖğrencilerToolStripMenuItem_Click);
+            // 
+            // girişÇıkışKayıtlarıToolStripMenuItem
+            // 
+            this.girişÇıkışKayıtlarıToolStripMenuItem.Name = "girişÇıkışKayıtlarıToolStripMenuItem";
+            this.girişÇıkışKayıtlarıToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
+            this.girişÇıkışKayıtlarıToolStripMenuItem.Text = "Giriş Çıkış Kayıtları";
+            this.girişÇıkışKayıtlarıToolStripMenuItem.Click += new System.EventHandler(this.girişÇıkışKayıtlarıToolStripMenuItem_Click);
             // 
             // bölümlerToolStripMenuItem
             // 
@@ -289,5 +298,6 @@
         private System.Windows.Forms.ToolStripMenuItem bölümDüzenleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ödemeToolStripMenuItem;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.ToolStripMenuItem girişÇıkışKayıtlarıToolStripMenuItem;
     }
 }

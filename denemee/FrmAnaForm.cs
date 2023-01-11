@@ -77,5 +77,17 @@ namespace denemee
             FrmSilinmisOgr silin= new FrmSilinmisOgr();
             silin.Show();
         }
+
+        private void girişÇıkışKayıtlarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGirCik gir = new FrmGirCik();
+            gir.Show();
+        }
+
+        private void raporAlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRapor rap = new FrmRapor(); 
+            rap.Show();
+        }
     }
 }

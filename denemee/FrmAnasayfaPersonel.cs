@@ -59,5 +59,11 @@ namespace denemee
             lblDateTimer.Text = DateTime.Now.ToLongDateString();
             lblTimer.Text = DateTime.Now.ToLongTimeString();
         }
+
+        private void girişÇıkışKayıtlarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGirCik gir = new FrmGirCik();
+            gir.Show();
+        }
     }
 }
