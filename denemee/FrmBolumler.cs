@@ -103,37 +103,7 @@ namespace denemee
             txtBolumId.Text= id;
             txtBolumAd.Text= bolumad;
 
-        }
-      
-
-        private void öğrenciKayıdıToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            Form1 fr = new Form1();
-            fr.Show();
-        }
-
-        private void ödemeAlToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmOdeme odeme= new FrmOdeme();
-            odeme.Show();
-        }
-
-        private void şifreİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            sifreislemleri sifre= new sifreislemleri();
-            sifre.Show();
-        }
-
-        private void personelDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmPersonel per = new FrmPersonel();
-            per.Show();
-        }
-
-        private void bölümEkleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmBolumler bol = new FrmBolumler();
-            bol.Show(); 
-        }
+        }   
+   
     }
 }

@@ -47,3 +47,4 @@ C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmPersonel.resour
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.sifreislemleri.resources
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmOdeme.resources
 C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmOgrArama.resources
+C:\Users\erhan\source\repos\denemee\denemee\obj\Debug\denemee.FrmSilinmisOgr.resources

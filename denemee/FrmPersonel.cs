@@ -97,34 +97,6 @@ namespace denemee
             this.personelTableAdapter.Fill(this.yurtSistemiDataSet7.Personel);
         }
 
-        private void öğrenciKayıdıToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form1 fr = new Form1();
-            fr.Show();
-        }
-
-        private void ödemeAlToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmOdeme ode = new FrmOdeme();
-            ode.Show();
-        }
-
-        private void şifreİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            sifreislemleri sifre= new sifreislemleri(); 
-            sifre.Show();
-        }
-
-        private void personelDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmPersonel per = new FrmPersonel();
-            per.Show();
-        }
-
-        private void bölümEkleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmBolumler bol = new FrmBolumler();
-            bol.Show();
-        }
+     
     }
 }

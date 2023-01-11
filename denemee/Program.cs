@@ -16,7 +16,7 @@ namespace denemee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmOdeme());
+            Application.Run(new FrmSilinmisOgr());
         }
     }
 }
