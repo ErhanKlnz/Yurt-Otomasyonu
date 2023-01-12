@@ -31,7 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGirCik));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.girisIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.girisTarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrGirisBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet16 = new denemee.YurtSistemiDataSet16();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrTCDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrCikisBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtSistemiDataSet15 = new denemee.YurtSistemiDataSet15();
             this.TxtTCGir = new System.Windows.Forms.TextBox();
             this.TxtTCCik = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,28 +50,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.BtnCikis = new System.Windows.Forms.Button();
             this.BtnGiris = new System.Windows.Forms.Button();
-            this.yurtSistemiDataSet15 = new denemee.YurtSistemiDataSet15();
-            this.ogrCikisBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ogrCikisTableAdapter = new denemee.YurtSistemiDataSet15TableAdapters.OgrCikisTableAdapter();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrTCDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrGirisBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ogrCikisBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.yurtSistemiDataSet16 = new denemee.YurtSistemiDataSet16();
-            this.ogrGirisBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ogrGirisTableAdapter = new denemee.YurtSistemiDataSet16TableAdapters.OgrGirisTableAdapter();
-            this.girisIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.girisTarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ogrTCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrGirisBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrCikisBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrGirisBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrCikisBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ogrGirisBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -74,11 +74,46 @@
             this.ogrTCDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.ogrGirisBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(20, 164);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(457, 255);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // girisIdDataGridViewTextBoxColumn
+            // 
+            this.girisIdDataGridViewTextBoxColumn.DataPropertyName = "GirisId";
+            this.girisIdDataGridViewTextBoxColumn.HeaderText = "GirisId";
+            this.girisIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.girisIdDataGridViewTextBoxColumn.Name = "girisIdDataGridViewTextBoxColumn";
+            this.girisIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.girisIdDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // girisTarihDataGridViewTextBoxColumn
+            // 
+            this.girisTarihDataGridViewTextBoxColumn.DataPropertyName = "GirisTarih";
+            this.girisTarihDataGridViewTextBoxColumn.HeaderText = "GirisTarih";
+            this.girisTarihDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.girisTarihDataGridViewTextBoxColumn.Name = "girisTarihDataGridViewTextBoxColumn";
+            this.girisTarihDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ogrTCDataGridViewTextBoxColumn
+            // 
+            this.ogrTCDataGridViewTextBoxColumn.DataPropertyName = "OgrTC";
+            this.ogrTCDataGridViewTextBoxColumn.HeaderText = "OgrTC";
+            this.ogrTCDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ogrTCDataGridViewTextBoxColumn.Name = "ogrTCDataGridViewTextBoxColumn";
+            this.ogrTCDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ogrGirisBindingSource1
+            // 
+            this.ogrGirisBindingSource1.DataMember = "OgrGiris";
+            this.ogrGirisBindingSource1.DataSource = this.yurtSistemiDataSet16;
+            // 
+            // yurtSistemiDataSet16
+            // 
+            this.yurtSistemiDataSet16.DataSetName = "YurtSistemiDataSet16";
+            this.yurtSistemiDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridView2
             // 
@@ -90,16 +125,51 @@
             this.ogrTCDataGridViewTextBoxColumn2});
             this.dataGridView2.DataSource = this.ogrCikisBindingSource1;
             this.dataGridView2.Location = new System.Drawing.Point(584, 164);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(455, 255);
             this.dataGridView2.TabIndex = 1;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "CikisId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "CikisId";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "CikisTarih";
+            this.dataGridViewTextBoxColumn2.HeaderText = "CikisTarih";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // ogrTCDataGridViewTextBoxColumn2
+            // 
+            this.ogrTCDataGridViewTextBoxColumn2.DataPropertyName = "OgrTC";
+            this.ogrTCDataGridViewTextBoxColumn2.HeaderText = "OgrTC";
+            this.ogrTCDataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.ogrTCDataGridViewTextBoxColumn2.Name = "ogrTCDataGridViewTextBoxColumn2";
+            this.ogrTCDataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // ogrCikisBindingSource1
+            // 
+            this.ogrCikisBindingSource1.DataMember = "OgrCikis";
+            this.ogrCikisBindingSource1.DataSource = this.yurtSistemiDataSet15;
+            // 
+            // yurtSistemiDataSet15
+            // 
+            this.yurtSistemiDataSet15.DataSetName = "YurtSistemiDataSet15";
+            this.yurtSistemiDataSet15.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // TxtTCGir
             // 
             this.TxtTCGir.Location = new System.Drawing.Point(60, 101);
-            this.TxtTCGir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtTCGir.Margin = new System.Windows.Forms.Padding(4);
             this.TxtTCGir.Name = "TxtTCGir";
             this.TxtTCGir.Size = new System.Drawing.Size(192, 22);
             this.TxtTCGir.TabIndex = 2;
@@ -107,7 +177,7 @@
             // TxtTCCik
             // 
             this.TxtTCCik.Location = new System.Drawing.Point(633, 101);
-            this.TxtTCCik.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtTCCik.Margin = new System.Windows.Forms.Padding(4);
             this.TxtTCCik.Name = "TxtTCCik";
             this.TxtTCCik.Size = new System.Drawing.Size(192, 22);
             this.TxtTCCik.TabIndex = 3;
@@ -160,8 +230,8 @@
             // 
             // BtnCikis
             // 
-            this.BtnCikis.Location = new System.Drawing.Point(861, 101);
-            this.BtnCikis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnCikis.Location = new System.Drawing.Point(859, 98);
+            this.BtnCikis.Margin = new System.Windows.Forms.Padding(4);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.Size = new System.Drawing.Size(100, 28);
             this.BtnCikis.TabIndex = 9;
@@ -172,7 +242,7 @@
             // BtnGiris
             // 
             this.BtnGiris.Location = new System.Drawing.Point(291, 100);
-            this.BtnGiris.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnGiris.Margin = new System.Windows.Forms.Padding(4);
             this.BtnGiris.Name = "BtnGiris";
             this.BtnGiris.Size = new System.Drawing.Size(100, 28);
             this.BtnGiris.TabIndex = 10;
@@ -180,44 +250,9 @@
             this.BtnGiris.UseVisualStyleBackColor = true;
             this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click);
             // 
-            // yurtSistemiDataSet15
-            // 
-            this.yurtSistemiDataSet15.DataSetName = "YurtSistemiDataSet15";
-            this.yurtSistemiDataSet15.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrCikisBindingSource1
-            // 
-            this.ogrCikisBindingSource1.DataMember = "OgrCikis";
-            this.ogrCikisBindingSource1.DataSource = this.yurtSistemiDataSet15;
-            // 
             // ogrCikisTableAdapter
             // 
             this.ogrCikisTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "CikisId";
-            this.dataGridViewTextBoxColumn1.HeaderText = "CikisId";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "CikisTarih";
-            this.dataGridViewTextBoxColumn2.HeaderText = "CikisTarih";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // ogrTCDataGridViewTextBoxColumn2
-            // 
-            this.ogrTCDataGridViewTextBoxColumn2.DataPropertyName = "OgrTC";
-            this.ogrTCDataGridViewTextBoxColumn2.HeaderText = "OgrTC";
-            this.ogrTCDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.ogrTCDataGridViewTextBoxColumn2.Name = "ogrTCDataGridViewTextBoxColumn2";
-            this.ogrTCDataGridViewTextBoxColumn2.Width = 125;
             // 
             // ogrGirisBindingSource
             // 
@@ -227,44 +262,9 @@
             // 
             this.ogrCikisBindingSource.DataMember = "OgrCikis";
             // 
-            // yurtSistemiDataSet16
-            // 
-            this.yurtSistemiDataSet16.DataSetName = "YurtSistemiDataSet16";
-            this.yurtSistemiDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrGirisBindingSource1
-            // 
-            this.ogrGirisBindingSource1.DataMember = "OgrGiris";
-            this.ogrGirisBindingSource1.DataSource = this.yurtSistemiDataSet16;
-            // 
             // ogrGirisTableAdapter
             // 
             this.ogrGirisTableAdapter.ClearBeforeFill = true;
-            // 
-            // girisIdDataGridViewTextBoxColumn
-            // 
-            this.girisIdDataGridViewTextBoxColumn.DataPropertyName = "GirisId";
-            this.girisIdDataGridViewTextBoxColumn.HeaderText = "GirisId";
-            this.girisIdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.girisIdDataGridViewTextBoxColumn.Name = "girisIdDataGridViewTextBoxColumn";
-            this.girisIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.girisIdDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // girisTarihDataGridViewTextBoxColumn
-            // 
-            this.girisTarihDataGridViewTextBoxColumn.DataPropertyName = "GirisTarih";
-            this.girisTarihDataGridViewTextBoxColumn.HeaderText = "GirisTarih";
-            this.girisTarihDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.girisTarihDataGridViewTextBoxColumn.Name = "girisTarihDataGridViewTextBoxColumn";
-            this.girisTarihDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ogrTCDataGridViewTextBoxColumn
-            // 
-            this.ogrTCDataGridViewTextBoxColumn.DataPropertyName = "OgrTC";
-            this.ogrTCDataGridViewTextBoxColumn.HeaderText = "OgrTC";
-            this.ogrTCDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ogrTCDataGridViewTextBoxColumn.Name = "ogrTCDataGridViewTextBoxColumn";
-            this.ogrTCDataGridViewTextBoxColumn.Width = 125;
             // 
             // FrmGirCik
             // 
@@ -284,18 +284,18 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmGirCik";
             this.Text = "Giriş Çıkış kayıtları";
             this.Load += new System.EventHandler(this.FrmGirCik_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrGirisBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrCikisBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrGirisBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrCikisBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtSistemiDataSet16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ogrGirisBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

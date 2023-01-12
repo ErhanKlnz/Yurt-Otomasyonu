@@ -259,7 +259,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.lblDateTimer);
-            this.ForeColor = System.Drawing.Color.AliceBlue;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAnasayfaPersonel";
             this.Text = "Ana Sayfa";

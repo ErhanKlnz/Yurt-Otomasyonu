@@ -35,6 +35,9 @@ namespace denemee
                 SqlCommand kmt1 = new SqlCommand("INSERT INTO OgrGiris (OgrTc) values (@p1)", bgl.baglanti());
                 kmt1.Parameters.AddWithValue("@p1", TxtTCGir.Text);
                 kmt1.ExecuteNonQuery();
+                MessageBox.Show("Öğrenci Girişi Yapıldı.");
+                this.ogrGirisTableAdapter.Fill(this.yurtSistemiDataSet16.OgrGiris);
+                this.ogrCikisTableAdapter.Fill(this.yurtSistemiDataSet15.OgrCikis);
             }
             catch (Exception)
             {
@@ -48,10 +51,12 @@ namespace denemee
         {
             try
             {
-                SqlCommand kmt2 = new SqlCommand("INSERT INTO OgrCikis where OgrTC=@p2 (OgrTc) values (@p2)", bgl.baglanti());
+                SqlCommand kmt2 = new SqlCommand("INSERT INTO OgrCikis (OgrTc) values (@p2)", bgl.baglanti());
                 kmt2.Parameters.AddWithValue("@p2", TxtTCCik.Text);
                 kmt2.ExecuteNonQuery();
-
+                MessageBox.Show("Öğrenci Çıkışı Yapıldı.");
+                this.ogrGirisTableAdapter.Fill(this.yurtSistemiDataSet16.OgrGiris);
+                this.ogrCikisTableAdapter.Fill(this.yurtSistemiDataSet15.OgrCikis);
             }
             catch (Exception)
             {
