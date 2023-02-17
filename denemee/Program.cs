@@ -16,9 +16,11 @@ namespace denemee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frmkullanici());
+            Application.Run(new FrmBackRestore());
         }
     }
 }
 
+
 // Frmkullanici-->> ile başlar
+// Form1   öğrenci kayıt

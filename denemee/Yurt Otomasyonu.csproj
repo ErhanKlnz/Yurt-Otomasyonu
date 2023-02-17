@@ -69,96 +69,96 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forumlar\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forumlar\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAdminGiris.cs">
+    <Compile Include="Forumlar\FrmAdminGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAdminGiris.Designer.cs">
+    <Compile Include="Forumlar\FrmAdminGiris.Designer.cs">
       <DependentUpon>FrmAdminGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAnasayfaPersonel.cs">
+    <Compile Include="Forumlar\FrmAnasayfaPersonel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAnasayfaPersonel.Designer.cs">
+    <Compile Include="Forumlar\FrmAnasayfaPersonel.Designer.cs">
       <DependentUpon>FrmAnasayfaPersonel.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBackRestore.cs">
+    <Compile Include="Forumlar\FrmBackRestore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBackRestore.Designer.cs">
+    <Compile Include="Forumlar\FrmBackRestore.Designer.cs">
       <DependentUpon>FrmBackRestore.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBolumler.cs">
+    <Compile Include="Forumlar\FrmBolumler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBolumler.Designer.cs">
+    <Compile Include="Forumlar\FrmBolumler.Designer.cs">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAnaForm.cs">
+    <Compile Include="Forumlar\FrmAnaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAnaForm.Designer.cs">
+    <Compile Include="Forumlar\FrmAnaForm.Designer.cs">
       <DependentUpon>FrmAnaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmGirCik.cs">
+    <Compile Include="Forumlar\FrmGirCik.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGirCik.designer.cs">
+    <Compile Include="Forumlar\FrmGirCik.designer.cs">
       <DependentUpon>FrmGirCik.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frmkullanici.cs">
+    <Compile Include="Forumlar\Frmkullanici.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frmkullanici.Designer.cs">
+    <Compile Include="Forumlar\Frmkullanici.Designer.cs">
       <DependentUpon>Frmkullanici.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmOdeme.cs">
+    <Compile Include="Forumlar\FrmOdeme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmOdeme.Designer.cs">
+    <Compile Include="Forumlar\FrmOdeme.Designer.cs">
       <DependentUpon>FrmOdeme.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmOgrArama.cs">
+    <Compile Include="Forumlar\FrmOgrArama.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmOgrArama.designer.cs">
+    <Compile Include="Forumlar\FrmOgrArama.designer.cs">
       <DependentUpon>FrmOgrArama.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPersonel.cs">
+    <Compile Include="Forumlar\FrmPersonel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPersonel.Designer.cs">
+    <Compile Include="Forumlar\FrmPersonel.Designer.cs">
       <DependentUpon>FrmPersonel.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPersonelGiriş.cs">
+    <Compile Include="Forumlar\FrmPersonelGiriş.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPersonelGiriş.Designer.cs">
+    <Compile Include="Forumlar\FrmPersonelGiriş.Designer.cs">
       <DependentUpon>FrmPersonelGiriş.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRapor.cs">
+    <Compile Include="Forumlar\FrmRapor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRapor.Designer.cs">
+    <Compile Include="Forumlar\FrmRapor.Designer.cs">
       <DependentUpon>FrmRapor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSilinmisOgr.cs">
+    <Compile Include="Forumlar\FrmSilinmisOgr.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSilinmisOgr.designer.cs">
+    <Compile Include="Forumlar\FrmSilinmisOgr.designer.cs">
       <DependentUpon>FrmSilinmisOgr.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sifreislemleri.cs">
+    <Compile Include="Forumlar\sifreislemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="sifreislemleri.Designer.cs">
+    <Compile Include="Forumlar\sifreislemleri.Designer.cs">
       <DependentUpon>sifreislemleri.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlBaglantim.cs" />
@@ -253,46 +253,46 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtSistemiDataSet9.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forumlar\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAdminGiris.resx">
+    <EmbeddedResource Include="Forumlar\FrmAdminGiris.resx">
       <DependentUpon>FrmAdminGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAnaForm.resx">
+    <EmbeddedResource Include="Forumlar\FrmAnaForm.resx">
       <DependentUpon>FrmAnaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAnasayfaPersonel.resx">
+    <EmbeddedResource Include="Forumlar\FrmAnasayfaPersonel.resx">
       <DependentUpon>FrmAnasayfaPersonel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBackRestore.resx">
+    <EmbeddedResource Include="Forumlar\FrmBackRestore.resx">
       <DependentUpon>FrmBackRestore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBolumler.resx">
+    <EmbeddedResource Include="Forumlar\FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmGirCik.resx">
+    <EmbeddedResource Include="Forumlar\FrmGirCik.resx">
       <DependentUpon>FrmGirCik.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frmkullanici.resx">
+    <EmbeddedResource Include="Forumlar\Frmkullanici.resx">
       <DependentUpon>Frmkullanici.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmOdeme.resx">
+    <EmbeddedResource Include="Forumlar\FrmOdeme.resx">
       <DependentUpon>FrmOdeme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmOgrArama.resx">
+    <EmbeddedResource Include="Forumlar\FrmOgrArama.resx">
       <DependentUpon>FrmOgrArama.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPersonel.resx">
+    <EmbeddedResource Include="Forumlar\FrmPersonel.resx">
       <DependentUpon>FrmPersonel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPersonelGiriş.resx">
+    <EmbeddedResource Include="Forumlar\FrmPersonelGiriş.resx">
       <DependentUpon>FrmPersonelGiriş.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRapor.resx">
+    <EmbeddedResource Include="Forumlar\FrmRapor.resx">
       <DependentUpon>FrmRapor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSilinmisOgr.resx">
+    <EmbeddedResource Include="Forumlar\FrmSilinmisOgr.resx">
       <DependentUpon>FrmSilinmisOgr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -305,7 +305,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="sifreislemleri.resx">
+    <EmbeddedResource Include="Forumlar\sifreislemleri.resx">
       <DependentUpon>sifreislemleri.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">
